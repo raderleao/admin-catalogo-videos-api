@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.raderleao.admin.catalogo.application.category.create.CreateCategoryUseCaseTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-03-09T20:13:06" hostname="RaderLeao-MacBook-Air.local" time="1.14">
+  <properties/>
+  <testcase name="givenAValidCommand_whenCallsCreateCategory_shouldReturnCategoryId()" classname="com.raderleao.admin.catalogo.application.category.create.CreateCategoryUseCaseTest" time="1.14"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
