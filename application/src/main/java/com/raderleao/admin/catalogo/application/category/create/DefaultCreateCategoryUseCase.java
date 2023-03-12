@@ -3,10 +3,10 @@ package com.raderleao.admin.catalogo.application.category.create;
 import com.raderleao.admin.catalogo.domain.category.Category;
 import com.raderleao.admin.catalogo.domain.category.CategoryGateway;
 import com.raderleao.admin.catalogo.domain.validation.handler.Notification;
-import io.vavr.API;
 import io.vavr.control.Either;
 
 import static io.vavr.API.Left;
+import static io.vavr.API.Try;
 
 public class DefaultCreateCategoryUseCase extends CreateCategoryUseCase {
 
@@ -27,15 +27,13 @@ public class DefaultCreateCategoryUseCase extends CreateCategoryUseCase {
         final var aCategory = Category.newCategory(aName,aDescription, isActive);
         aCategory.validate(notification);
 
-
         return notification.hasError() ? Left(notification) : create(aCategory);
 
     }
 
     private Either<Notification, CreateCategoryOutput> create(Category aCategory) {
-        return API.Try(() -> this.categoryGateway.create(aCategory))
+        return Try(() -> this.categoryGateway.create(aCategory))
                 .toEither()
-                .map(CreateCategoryOutput::from)
-                .mapLeft(Notification::create);
+                .bimap(Notification::create, CreateCategoryOutput::from);
     }
 }
