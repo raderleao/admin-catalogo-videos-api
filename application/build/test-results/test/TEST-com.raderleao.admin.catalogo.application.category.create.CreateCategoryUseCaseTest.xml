@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.raderleao.admin.catalogo.application.category.create.CreateCategoryUseCaseTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-03-12T19:46:23" hostname="RaderLeao-MacBook-Air.local" time="0.652">
+<testsuite name="com.raderleao.admin.catalogo.application.category.create.CreateCategoryUseCaseTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2023-03-12T20:10:01" hostname="RaderLeao-MacBook-Air.local" time="0.138">
   <properties/>
-  <testcase name="givenAInvalidName_whenCallsCreateCategory_thenShouldReturnDomainException()" classname="com.raderleao.admin.catalogo.application.category.create.CreateCategoryUseCaseTest" time="0.652"/>
+  <testcase name="givenAValidCommand_whenCallsCreateCategory_shouldReturnCategoryId()" classname="com.raderleao.admin.catalogo.application.category.create.CreateCategoryUseCaseTest" time="0.122"/>
+  <testcase name="givenAValidCommand_whenGatewayThrowsRandomException_shouldReturnException()" classname="com.raderleao.admin.catalogo.application.category.create.CreateCategoryUseCaseTest" time="0.008"/>
+  <testcase name="givenAInvalidName_whenCallsCreateCategory_thenShouldReturnDomainException()" classname="com.raderleao.admin.catalogo.application.category.create.CreateCategoryUseCaseTest" time="0.002"/>
+  <testcase name="givenAValidCommandWithInactiveCategory_whenCallsCreateCategory_shouldReturnInactiveCategoryId()" classname="com.raderleao.admin.catalogo.application.category.create.CreateCategoryUseCaseTest" time="0.003"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
