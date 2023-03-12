@@ -1,6 +1,7 @@
 package com.raderleao.admin.catalogo.domain.validation;
 
 import java.util.List;
+import java.util.Optional;
 
 public interface ValidationHandler {
 
@@ -14,6 +15,12 @@ public interface ValidationHandler {
 
     default boolean hasError() {
         return getErrors() != null && !getErrors().isEmpty();
+    }
+
+    default Optional<Error> firtError() {
+        return getErrors() != null && !getErrors().isEmpty()
+                ? Optional.of(getErrors().get(0))
+                : Optional.empty();
     }
 
     interface Validation {
