@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.raderleao.admin.catalogo.application.category.update.UpdateCategoryUseCaseTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-03-13T01:45:09" hostname="RaderLeao-MacBook-Air.local" time="0.664">
+  <properties/>
+  <testcase name="givenACommandWithInvalidID_whenCallsUpdateCategory_shouldReturnNotFoundException()" classname="com.raderleao.admin.catalogo.application.category.update.UpdateCategoryUseCaseTest" time="0.664"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

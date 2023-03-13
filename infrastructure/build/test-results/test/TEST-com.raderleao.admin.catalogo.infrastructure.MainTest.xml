@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.raderleao.admin.catalogo.infrastructure.MainTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-03-12T20:10:02" hostname="RaderLeao-MacBook-Air.local" time="0.011">
+<testsuite name="com.raderleao.admin.catalogo.infrastructure.MainTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-03-13T00:59:17" hostname="RaderLeao-MacBook-Air.local" time="0.015">
   <properties/>
-  <testcase name="testMain()" classname="com.raderleao.admin.catalogo.infrastructure.MainTest" time="0.011"/>
+  <testcase name="testMain()" classname="com.raderleao.admin.catalogo.infrastructure.MainTest" time="0.015"/>
   <system-out><![CDATA[Hello world!
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
