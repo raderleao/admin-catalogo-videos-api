@@ -1,6 +1,5 @@
 package com.raderleao.admin.catalogo.domain.category;
 
-//import com.raderleao.admin.catalogo.domain.UnitTest;
 import com.raderleao.admin.catalogo.domain.exceptions.DomainException;
 import com.raderleao.admin.catalogo.domain.validation.handler.ThrowsValidationHandler;
 import org.junit.jupiter.api.Assertions;
