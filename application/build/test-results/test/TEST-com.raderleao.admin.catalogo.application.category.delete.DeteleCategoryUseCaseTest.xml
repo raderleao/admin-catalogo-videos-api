@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.raderleao.admin.catalogo.application.category.delete.DeteleCategoryUseCaseTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-03-14T21:07:03" hostname="RaderLeao-MacBook-Air.local" time="0.011">
+<testsuite name="com.raderleao.admin.catalogo.application.category.delete.DeteleCategoryUseCaseTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-03-14T21:34:05" hostname="RaderLeao-MacBook-Air.local" time="0.01">
   <properties/>
   <testcase name="givenAValidId_whenCallsDeleteCategory_shouldBeOK()" classname="com.raderleao.admin.catalogo.application.category.delete.DeteleCategoryUseCaseTest" time="0.005"/>
   <testcase name="givenAInvalidId_whenCallsDeleteCategory_shouldBeOK()" classname="com.raderleao.admin.catalogo.application.category.delete.DeteleCategoryUseCaseTest" time="0.002"/>
