@@ -5,66 +5,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="520d2c9a-ac28-4f30-85f3-da225c95735b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/resources/application-production.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/resources/db/migration/V1__initial.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.6/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.6/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6/checksums/md5-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.6/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6/checksums/sha1-checksums.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/src/test/java/com/raderleao/admin/catalogo/IntegrationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/src/test/java/com/raderleao/admin/catalogo/application/SampleIT.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.6/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.6/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.6/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.6/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.6/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/build/libs/application-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/application/build/libs/application-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/build/reports/tests/test/classes/com.raderleao.admin.catalogo.application.UseCaseTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/build/reports/tests/test/classes/com.raderleao.admin.catalogo.application.UseCaseTest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/build/reports/tests/test/classes/com.raderleao.admin.catalogo.application.category.create.CreateCategoryUseCaseTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/build/reports/tests/test/classes/com.raderleao.admin.catalogo.application.category.create.CreateCategoryUseCaseTest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/build/reports/tests/test/classes/com.raderleao.admin.catalogo.application.category.delete.DeteleCategoryUseCaseTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/build/reports/tests/test/classes/com.raderleao.admin.catalogo.application.category.delete.DeteleCategoryUseCaseTest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/build/reports/tests/test/classes/com.raderleao.admin.catalogo.application.category.retrieve.get.GetCategoryByIdUseCaseTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/build/reports/tests/test/classes/com.raderleao.admin.catalogo.application.category.retrieve.get.GetCategoryByIdUseCaseTest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/build/reports/tests/test/classes/com.raderleao.admin.catalogo.application.category.retrieve.list.ListCategoriesUseCaseTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/build/reports/tests/test/classes/com.raderleao.admin.catalogo.application.category.retrieve.list.ListCategoriesUseCaseTest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/build/reports/tests/test/classes/com.raderleao.admin.catalogo.application.category.update.UpdateCategoryUseCaseTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/build/reports/tests/test/classes/com.raderleao.admin.catalogo.application.category.update.UpdateCategoryUseCaseTest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/build/reports/tests/test/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/build/reports/tests/test/packages/com.raderleao.admin.catalogo.application.category.create.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/build/reports/tests/test/packages/com.raderleao.admin.catalogo.application.category.create.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/build/reports/tests/test/packages/com.raderleao.admin.catalogo.application.category.delete.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/build/reports/tests/test/packages/com.raderleao.admin.catalogo.application.category.delete.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/build/reports/tests/test/packages/com.raderleao.admin.catalogo.application.category.retrieve.get.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/build/reports/tests/test/packages/com.raderleao.admin.catalogo.application.category.retrieve.get.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/build/reports/tests/test/packages/com.raderleao.admin.catalogo.application.category.retrieve.list.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/build/reports/tests/test/packages/com.raderleao.admin.catalogo.application.category.retrieve.list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/build/reports/tests/test/packages/com.raderleao.admin.catalogo.application.category.update.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/build/reports/tests/test/packages/com.raderleao.admin.catalogo.application.category.update.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/build/reports/tests/test/packages/com.raderleao.admin.catalogo.application.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/build/reports/tests/test/packages/com.raderleao.admin.catalogo.application.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/build/test-results/test/TEST-com.raderleao.admin.catalogo.application.UseCaseTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/application/build/test-results/test/TEST-com.raderleao.admin.catalogo.application.UseCaseTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/build/test-results/test/TEST-com.raderleao.admin.catalogo.application.category.create.CreateCategoryUseCaseTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/application/build/test-results/test/TEST-com.raderleao.admin.catalogo.application.category.create.CreateCategoryUseCaseTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/build/test-results/test/TEST-com.raderleao.admin.catalogo.application.category.delete.DeteleCategoryUseCaseTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/application/build/test-results/test/TEST-com.raderleao.admin.catalogo.application.category.delete.DeteleCategoryUseCaseTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/build/test-results/test/TEST-com.raderleao.admin.catalogo.application.category.retrieve.get.GetCategoryByIdUseCaseTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/application/build/test-results/test/TEST-com.raderleao.admin.catalogo.application.category.retrieve.get.GetCategoryByIdUseCaseTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/build/test-results/test/TEST-com.raderleao.admin.catalogo.application.category.retrieve.list.ListCategoriesUseCaseTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/application/build/test-results/test/TEST-com.raderleao.admin.catalogo.application.category.retrieve.list.ListCategoriesUseCaseTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/build/test-results/test/TEST-com.raderleao.admin.catalogo.application.category.update.UpdateCategoryUseCaseTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/application/build/test-results/test/TEST-com.raderleao.admin.catalogo.application.category.update.UpdateCategoryUseCaseTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/application/build/test-results/test/binary/results.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/admin-do-catalogo-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/admin-do-catalogo-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/application.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/application.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/build/libs/domain-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/domain/build/libs/domain-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/build/reports/tests/test/classes/com.raderleao.admin.catalogo.domain.category.CategoryTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/domain/build/reports/tests/test/classes/com.raderleao.admin.catalogo.domain.category.CategoryTest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/domain/build/reports/tests/test/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/build/reports/tests/test/packages/com.raderleao.admin.catalogo.domain.category.html" beforeDir="false" afterPath="$PROJECT_DIR$/domain/build/reports/tests/test/packages/com.raderleao.admin.catalogo.domain.category.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/build/test-results/test/TEST-com.raderleao.admin.catalogo.domain.category.CategoryTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/domain/build/test-results/test/TEST-com.raderleao.admin.catalogo.domain.category.CategoryTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/domain/build/test-results/test/binary/results.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/build/classes/java/test/com/raderleao/admin/catalogo/infrastructure/MainTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/build/classes/java/test/com/raderleao/admin/catalogo/infrastructure/MainTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/build/libs/infrastructure-plain.jar" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/build/libs/infrastructure-plain.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/build/reports/tests/test/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/build/resources/main/application-test.yml" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/build/resources/main/application-test.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/build/resources/main/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/build/resources/main/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/build/tmp/compileJava/compileTransaction/stash-dir/Main.class.uniqueId0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/build/classes/java/main/com/raderleao/admin/catalogo/application/category/create/CreateCategoryUseCase.class" beforeDir="false" afterPath="$PROJECT_DIR$/application/build/classes/java/main/com/raderleao/admin/catalogo/application/category/create/CreateCategoryUseCase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/src/main/java/com/raderleao/admin/catalogo/application/category/create/CreateCategoryUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/main/java/com/raderleao/admin/catalogo/application/category/create/CreateCategoryUseCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/build/classes/java/main/com/raderleao/admin/catalogo/infrastructure/configuration/usecases/CategoryUseCaseConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/build/classes/java/main/com/raderleao/admin/catalogo/infrastructure/configuration/usecases/CategoryUseCaseConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/build/classes/java/test/com/raderleao/admin/catalogo/infrastructure/MySQLCleanUpExtension.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/build/classes/java/test/com/raderleao/admin/catalogo/infrastructure/MySQLGatewayTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/build/classes/java/test/com/raderleao/admin/catalogo/infrastructure/category/CategoryMySQLGatewayTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/build/classes/java/test/com/raderleao/admin/catalogo/infrastructure/category/CategoryMySQLGatewayTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/build/classes/java/test/com/raderleao/admin/catalogo/infrastructure/category/persistence/CategoryRepositoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/build/classes/java/test/com/raderleao/admin/catalogo/infrastructure/category/persistence/CategoryRepositoryTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/infrastructure/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/resources/application-test.yml" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/main/resources/application-test.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/src/test/java/com/raderleao/admin/catalogo/infrastructure/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/test/java/com/raderleao/admin/catalogo/infrastructure/MainTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/com/raderleao/admin/catalogo/infrastructure/category/persistence/CategoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/main/java/com/raderleao/admin/catalogo/infrastructure/category/persistence/CategoryRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/com/raderleao/admin/catalogo/infrastructure/configuration/usecases/CategoryUseCaseConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/main/java/com/raderleao/admin/catalogo/infrastructure/configuration/usecases/CategoryUseCaseConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/test/java/com/raderleao/admin/catalogo/infrastructure/MySQLCleanUpExtension.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/test/java/com/raderleao/admin/catalogo/CleanUpExtension.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/test/java/com/raderleao/admin/catalogo/infrastructure/MySQLGatewayTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/test/java/com/raderleao/admin/catalogo/MySQLGatewayTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/test/java/com/raderleao/admin/catalogo/infrastructure/category/CategoryMySQLGatewayTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/test/java/com/raderleao/admin/catalogo/infrastructure/category/CategoryMySQLGatewayTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/test/java/com/raderleao/admin/catalogo/infrastructure/category/persistence/CategoryRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/test/java/com/raderleao/admin/catalogo/infrastructure/category/persistence/CategoryRepositoryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
@@ -96,12 +66,7 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="admin-do-catalogo" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="flyway" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="admin-do-catalogo" type="f1a62948:ProjectNode" />
-                <item name="infrastructure" type="2d1252cf:ModuleNode" />
+                <item name="verification" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -113,6 +78,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
+        <option value="AnnotationType" />
         <option value="Class" />
       </list>
     </option>
@@ -126,52 +93,75 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectId" id="2N0pEQUsOOMV9PZH2JkM0nVLoY2" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="abbreviatePackageNames" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
     <option name="showVisibilityIcons" value="true" />
     <option name="sortByType" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelOrder2": "2",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RequestMappingsPanelWidth2": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "/Users/raderleao/src/dev/Workspace/admin-do-catalogo/infrastructure/src/main/resources",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "spring.configuration.checksum": "c2450deb508acfabe90ccff7dc0cc52d",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelOrder2&quot;: &quot;2&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth2&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/raderleao/src/dev/Workspace/admin-do-catalogo/infrastructure/src/main/resources&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.javacompiler&quot;,
+    &quot;settings.editor.splitter.proportion&quot;: &quot;0.26485148&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;c2450deb508acfabe90ccff7dc0cc52d&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "h2"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;h2&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/infrastructure/src/main/resources" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.raderleao.admin.catalogo.infrastructure.category" />
+    </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.Main">
-    <configuration name="MainTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.SampleIT">
+    <configuration name="Main" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.raderleao.admin.catalogo.infrastructure.Main" />
+      <module name="admin-do-catalogo.infrastructure.main" />
+      <extension name="software.aws.toolkits.jetbrains.core.execution.JavaAwsConnectionExtension">
+        <option name="credential" />
+        <option name="region" />
+        <option name="useCurrentConnection" value="false" />
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CategoryMySQLGatewayTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -184,7 +174,7 @@
           <list>
             <option value=":infrastructure:test" />
             <option value="--tests" />
-            <option value="&quot;com.raderleao.admin.catalogo.infrastructure.MainTest&quot;" />
+            <option value="&quot;com.raderleao.admin.catalogo.infrastructure.category.CategoryMySQLGatewayTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -194,7 +184,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="MainTest.testMain" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="CategoryMySQLGatewayTest.givenAPrePersistedCategoryAndValidCategoryId_whenCallsFindById_shouldReturnCategory" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -207,7 +197,7 @@
           <list>
             <option value=":infrastructure:test" />
             <option value="--tests" />
-            <option value="&quot;com.raderleao.admin.catalogo.infrastructure.MainTest.testMain&quot;" />
+            <option value="&quot;com.raderleao.admin.catalogo.infrastructure.category.CategoryMySQLGatewayTest.givenAPrePersistedCategoryAndValidCategoryId_whenCallsFindById_shouldReturnCategory&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -217,23 +207,48 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="admin-do-catalogo [dependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="CategoryMySQLGatewayTest.givenInvalidCategoryIdNotStored_whenCallsFindById_shouldReturnEmpty" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
+        <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value="dependencies" />
+            <option value=":infrastructure:test" />
+            <option value="--tests" />
+            <option value="&quot;com.raderleao.admin.catalogo.infrastructure.category.CategoryMySQLGatewayTest.givenInvalidCategoryIdNotStored_whenCallsFindById_shouldReturnEmpty&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="SampleIT" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":infrastructure:test" />
+            <option value="--tests" />
+            <option value="&quot;com.raderleao.admin.catalogo.application.SampleIT&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
@@ -264,6 +279,7 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <module name="admin-do-catalogo.infrastructure.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.raderleao.admin.catalogo.infrastructure.Main" />
+      <option name="VM_PARAMETERS" value="-Xshare:off" />
       <extension name="software.aws.toolkits.jetbrains.core.execution.JavaAwsConnectionExtension">
         <option name="credential" />
         <option name="region" />
@@ -273,12 +289,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="aws.lambda" factoryName="Remote">
+      <option name="credentialProviderId" />
+      <option name="regionId" />
+      <option name="functionName" />
+      <option name="input" />
+      <option name="inputIsFile" value="false" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Gradle.SampleIT" />
+      <item itemvalue="Gradle.CategoryMySQLGatewayTest" />
+      <item itemvalue="Gradle.CategoryMySQLGatewayTest.givenAPrePersistedCategoryAndValidCategoryId_whenCallsFindById_shouldReturnCategory" />
+      <item itemvalue="Gradle.CategoryMySQLGatewayTest.givenInvalidCategoryIdNotStored_whenCallsFindById_shouldReturnEmpty" />
+      <item itemvalue="Gradle.admin-do-catalogo [test]" />
+      <item itemvalue="Spring Boot.Main" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.MainTest.testMain" />
+        <item itemvalue="Gradle.SampleIT" />
         <item itemvalue="Gradle.admin-do-catalogo [test]" />
-        <item itemvalue="Gradle.admin-do-catalogo [dependencies]" />
-        <item itemvalue="Gradle.MainTest" />
+        <item itemvalue="Gradle.CategoryMySQLGatewayTest" />
+        <item itemvalue="Gradle.CategoryMySQLGatewayTest.givenInvalidCategoryIdNotStored_whenCallsFindById_shouldReturnEmpty" />
+        <item itemvalue="Gradle.CategoryMySQLGatewayTest.givenAPrePersistedCategoryAndValidCategoryId_whenCallsFindById_shouldReturnCategory" />
       </list>
     </recent_temporary>
   </component>
@@ -294,7 +328,8 @@
       <workItem from="1678811725904" duration="494000" />
       <workItem from="1678812297922" duration="9015000" />
       <workItem from="1678829899921" duration="206000" />
-      <workItem from="1678830179483" duration="14708000" />
+      <workItem from="1678830179483" duration="49241000" />
+      <workItem from="1678976548565" duration="6708000" />
     </task>
     <servers />
   </component>
