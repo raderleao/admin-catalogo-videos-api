@@ -1,7 +1,6 @@
 package com.raderleao.admin.catalogo.infrastructure.category.persistence;
 
 import com.raderleao.admin.catalogo.domain.category.Category;
-import com.raderleao.admin.catalogo.domain.category.CategoryID;
 import com.raderleao.admin.catalogo.infrastructure.MySQLGatewayTest;
 import org.hibernate.PropertyValueException;
 import org.junit.jupiter.api.Assertions;
@@ -21,8 +20,7 @@ public class CategoryRepositoryTest {
         final var expectedMessage = "not-null property references a null or transient value : com.raderleao.admin.catalogo.infrastructure.category.persistence.CategoryJpaEntity.name";
         final var aCategory = Category.newCategory("Filmes", "A categoria mais assistida", true);
 
-        final var anEntity = CategoryJpaEntity.from(aCategory);
-        anEntity.setName(null);
+        final var anEntity = CategoryJpaEntity.from(aCategory);anEntity.setName(null);
 
         final var actualException =
             Assertions.assertThrows(DataIntegrityViolationException.class, () -> categoryRepository.save(anEntity));
@@ -32,7 +30,6 @@ public class CategoryRepositoryTest {
 
         Assertions.assertEquals(expectedPropertyName, actualCause.getPropertyName());
         Assertions.assertEquals(expectedMessage, actualCause.getMessage());
-
     }
 
     @Test
@@ -41,8 +38,7 @@ public class CategoryRepositoryTest {
         final var expectedMessage = "not-null property references a null or transient value : com.raderleao.admin.catalogo.infrastructure.category.persistence.CategoryJpaEntity.createdAt";
         final var aCategory = Category.newCategory("Filmes", "A categoria mais assistida", true);
 
-        final var anEntity = CategoryJpaEntity.from(aCategory);
-        anEntity.setCreatedAt(null);
+        final var anEntity = CategoryJpaEntity.from(aCategory);anEntity.setCreatedAt(null);
 
         final var actualException =
                 Assertions.assertThrows(DataIntegrityViolationException.class, () -> categoryRepository.save(anEntity));
@@ -52,7 +48,6 @@ public class CategoryRepositoryTest {
 
         Assertions.assertEquals(expectedPropertyName, actualCause.getPropertyName());
         Assertions.assertEquals(expectedMessage, actualCause.getMessage());
-
     }
 
     @Test
@@ -61,8 +56,7 @@ public class CategoryRepositoryTest {
         final var expectedMessage = "not-null property references a null or transient value : com.raderleao.admin.catalogo.infrastructure.category.persistence.CategoryJpaEntity.updatedAt";
         final var aCategory = Category.newCategory("Filmes", "A categoria mais assistida", true);
 
-        final var anEntity = CategoryJpaEntity.from(aCategory);
-        anEntity.setUpdatedAt(null);
+        final var anEntity = CategoryJpaEntity.from(aCategory);anEntity.setUpdatedAt(null);
 
         final var actualException =
                 Assertions.assertThrows(DataIntegrityViolationException.class, () -> categoryRepository.save(anEntity));
@@ -72,6 +66,5 @@ public class CategoryRepositoryTest {
 
         Assertions.assertEquals(expectedPropertyName, actualCause.getPropertyName());
         Assertions.assertEquals(expectedMessage, actualCause.getMessage());
-
     }
 }
