@@ -11,8 +11,20 @@ import com.raderleao.admin.catalogo.application.category.retrieve.list.ListCateg
 import com.raderleao.admin.catalogo.application.category.update.DefaultUpdateCategoryUseCase;
 import com.raderleao.admin.catalogo.application.category.update.UpdateCategoryUseCase;
 import com.raderleao.admin.catalogo.domain.category.CategoryGateway;
+import com.raderleao.admin.catalogo.infrastructure.category.persistence.CategoryJpaEntity;
+import com.raderleao.admin.catalogo.infrastructure.category.persistence.CategoryRepository;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.data.domain.Example;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
+import org.springframework.data.jpa.domain.Specification;
+import org.springframework.data.repository.query.FluentQuery;
+
+import java.util.List;
+import java.util.Optional;
+import java.util.function.Function;
 
 @Configuration
 public class CategoryUseCaseConfig {
@@ -45,6 +57,8 @@ public class CategoryUseCaseConfig {
 
     @Bean
     public DeleteCategoryUseCase deleteCategoryUseCase() {
+
         return new DefaultDeleteCategoryUseCase(categoryGateway);
     }
+
 }

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.raderleao.admin.catalogo.application.UseCaseTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-03-16T03:30:37" hostname="RaderLeao-MacBook-Air.local" time="1.242">
+<testsuite name="com.raderleao.admin.catalogo.application.UseCaseTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-03-16T16:34:38" hostname="RaderLeao-MacBook-Air.local" time="0.613">
   <properties/>
-  <testcase name="testCreateUseCase()" classname="com.raderleao.admin.catalogo.application.UseCaseTest" time="1.242"/>
+  <testcase name="testCreateUseCase()" classname="com.raderleao.admin.catalogo.application.UseCaseTest" time="0.613"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

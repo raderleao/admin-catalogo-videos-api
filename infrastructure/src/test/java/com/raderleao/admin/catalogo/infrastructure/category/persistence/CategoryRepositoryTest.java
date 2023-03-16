@@ -1,7 +1,7 @@
 package com.raderleao.admin.catalogo.infrastructure.category.persistence;
 
 import com.raderleao.admin.catalogo.domain.category.Category;
-import com.raderleao.admin.catalogo.infrastructure.MySQLGatewayTest;
+import com.raderleao.admin.catalogo.MySQLGatewayTest;
 import org.hibernate.PropertyValueException;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
