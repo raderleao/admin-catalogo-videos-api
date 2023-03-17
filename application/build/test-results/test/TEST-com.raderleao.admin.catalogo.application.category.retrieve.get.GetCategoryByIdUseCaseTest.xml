@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.raderleao.admin.catalogo.application.category.retrieve.get.GetCategoryByIdUseCaseTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-03-16T16:34:39" hostname="RaderLeao-MacBook-Air.local" time="0.008">
-  <properties/>
-  <testcase name="givenAValidId_whenCallsGetCategory_shouldReturnCategory()" classname="com.raderleao.admin.catalogo.application.category.retrieve.get.GetCategoryByIdUseCaseTest" time="0.003"/>
-  <testcase name="givenAValidId_whenGatewayThrowsException_shouldReturnException()" classname="com.raderleao.admin.catalogo.application.category.retrieve.get.GetCategoryByIdUseCaseTest" time="0.002"/>
-  <testcase name="givenAInvalidId_whenCallsGetCategory_shouldReturnNotFound()" classname="com.raderleao.admin.catalogo.application.category.retrieve.get.GetCategoryByIdUseCaseTest" time="0.002"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

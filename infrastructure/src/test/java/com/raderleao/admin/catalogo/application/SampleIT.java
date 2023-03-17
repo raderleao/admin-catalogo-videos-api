@@ -6,7 +6,6 @@ import com.raderleao.admin.catalogo.infrastructure.category.persistence.Category
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Bean;
 
 @IntegrationTest
 public class SampleIT {
