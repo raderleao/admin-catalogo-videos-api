@@ -23,7 +23,7 @@
 <tr>
 <td>
 <div class="infoBox" id="tests">
-<div class="counter">1</div>
+<div class="counter">4</div>
 <p>tests</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.252s</div>
+<div class="counter">0.098s</div>
 <p>duration</p>
 </div>
 </td>
@@ -78,8 +78,23 @@
 </tr>
 </thead>
 <tr>
+<td class="success">givenAInvalidName_whenCallsCreateCategory_thenShouldReturnDomainException()</td>
+<td class="success">0.008s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">givenAValidCommandWithInactiveCategory_whenCallsCreateCategory_shouldReturnInactiveCategoryId()</td>
+<td class="success">0.006s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
 <td class="success">givenAValidCommand_whenCallsCreateCategory_shouldReturnCategoryId()</td>
-<td class="success">0.252s</td>
+<td class="success">0.074s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">givenAValidCommand_whenGatewayThrowsRandomException_shouldReturnException()</td>
+<td class="success">0.010s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -87,17 +102,10 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>18:16:15.453 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
-18:16:15.460 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
-18:16:15.484 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.raderleao.admin.catalogo.application.category.create.CreateCategoryUseCaseIT] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
-18:16:15.493 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.raderleao.admin.catalogo.application.category.create.CreateCategoryUseCaseIT], using SpringBootContextLoader
-18:16:15.497 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.raderleao.admin.catalogo.application.category.create.CreateCategoryUseCaseIT]: class path resource [com/raderleao/admin/catalogo/application/category/create/CreateCategoryUseCaseIT-context.xml] does not exist
-18:16:15.497 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.raderleao.admin.catalogo.application.category.create.CreateCategoryUseCaseIT]: class path resource [com/raderleao/admin/catalogo/application/category/create/CreateCategoryUseCaseITContext.groovy] does not exist
-18:16:15.497 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.raderleao.admin.catalogo.application.category.create.CreateCategoryUseCaseIT]: no resource found for suffixes {-context.xml, Context.groovy}.
-18:16:15.639 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.raderleao.admin.catalogo.application.category.create.CreateCategoryUseCaseIT]: using defaults.
-18:16:15.640 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
-18:16:15.659 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@607fbe09, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@60a2630a, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@29df4d43, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@5dd91bca, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@40cb698e, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3382f8ae, org.springframework.test.context.transaction.TransactionalTestExecutionListener@60641ec8, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@75f65e45, org.springframework.test.context.event.EventPublishingTestExecutionListener@6eeade6c, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@4a891c97, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@a5bd950, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@4d18aa28, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@75390459, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@7756c3cd, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@2313052e]
-18:16:15.662 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@7c209437 testClass = CreateCategoryUseCaseIT, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@2262b621 testClass = CreateCategoryUseCaseIT, locations = '{}', classes = '{class com.raderleao.admin.catalogo.infrastructure.configuration.WebServerConfig}', contextInitializerClasses = '[]', activeProfiles = '{test}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@291a7e3c, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@7a1a14a4, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@3b96c42e, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@3899782c, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@4f5991f6, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@60015ef5], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; true]], class annotated with @DirtiesContext [false] with mode [null].
+<pre>2023-03-17 19:05:48.616  INFO 48042 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.raderleao.admin.catalogo.application.category.create.CreateCategoryUseCaseIT], using SpringBootContextLoader
+2023-03-17 19:05:48.617  INFO 48042 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.raderleao.admin.catalogo.application.category.create.CreateCategoryUseCaseIT]: no resource found for suffixes {-context.xml, Context.groovy}.
+2023-03-17 19:05:48.620  INFO 48042 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2023-03-17 19:05:48.620  INFO 48042 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@52a605c3, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@13fad0c7, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@24fb8317, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@6d2f910b, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@f451970, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4a7c8cb7, org.springframework.test.context.transaction.TransactionalTestExecutionListener@32675dd4, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@2351255a, org.springframework.test.context.event.EventPublishingTestExecutionListener@4f836d9, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@2a4f1bc5, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@224e7aa5, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@89ff043, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@4d145177, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@1f57fa23, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@4e9d203e]
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -107,38 +115,45 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v2.7.7)
 
-2023-03-17 18:16:15.987  INFO 43923 --- [    Test worker] c.r.a.c.a.c.c.CreateCategoryUseCaseIT    : Starting CreateCategoryUseCaseIT using Java 17.0.2 on RaderLeao-MacBook-Air.local with PID 43923 (started by raderleao in /Users/raderleao/src/dev/Workspace/admin-do-catalogo/infrastructure)
-2023-03-17 18:16:15.988  INFO 43923 --- [    Test worker] c.r.a.c.a.c.c.CreateCategoryUseCaseIT    : The following 1 profile is active: &quot;test&quot;
-2023-03-17 18:16:16.397  INFO 43923 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-03-17 18:16:16.430  INFO 43923 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 27 ms. Found 1 JPA repository interfaces.
-2023-03-17 18:16:16.821  INFO 43923 --- [    Test worker] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.5.13 by Redgate
-2023-03-17 18:16:16.821  INFO 43923 --- [    Test worker] o.f.c.internal.license.VersionPrinter    : See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#8.5.13
-2023-03-17 18:16:16.821  INFO 43923 --- [    Test worker] o.f.c.internal.license.VersionPrinter    : 
-2023-03-17 18:16:16.830  WARN 43923 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : master - idleTimeout is close to or more than maxLifetime, disabling it.
-2023-03-17 18:16:16.831  INFO 43923 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : master - Starting...
-2023-03-17 18:16:17.015  INFO 43923 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : master - Start completed.
-2023-03-17 18:16:17.023  INFO 43923 --- [    Test worker] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:h2:mem:/adm_videos_test (H2 2.1)
-2023-03-17 18:16:17.056  WARN 43923 --- [    Test worker] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: H2 2.1.214 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.1.210.
-2023-03-17 18:16:17.072  INFO 43923 --- [    Test worker] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.007s)
-2023-03-17 18:16:17.076  INFO 43923 --- [    Test worker] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table &quot;PUBLIC&quot;.&quot;flyway_schema_history&quot; ...
-2023-03-17 18:16:17.094  INFO 43923 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Current version of schema &quot;PUBLIC&quot;: &lt;&lt; Empty Schema &gt;&gt;
-2023-03-17 18:16:17.099  INFO 43923 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Migrating schema &quot;PUBLIC&quot; to version &quot;1 - initial&quot;
-2023-03-17 18:16:17.105  INFO 43923 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Successfully applied 1 migration to schema &quot;PUBLIC&quot;, now at version v1 (execution time 00:00.012s)
-2023-03-17 18:16:17.235  INFO 43923 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-03-17 18:16:17.281  INFO 43923 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
-2023-03-17 18:16:17.409  INFO 43923 --- [    Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2023-03-17 18:16:17.500  INFO 43923 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
-2023-03-17 18:16:17.841  INFO 43923 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-03-17 18:16:17.847  INFO 43923 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-03-17 18:16:18.195  INFO 43923 --- [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:mem:/adm_videos_test'
-2023-03-17 18:16:18.239  WARN 43923 --- [    Test worker] .s.s.UserDetailsServiceAutoConfiguration : 
+2023-03-17 19:05:48.643  INFO 48042 --- [    Test worker] c.r.a.c.a.c.c.CreateCategoryUseCaseIT    : Starting CreateCategoryUseCaseIT using Java 17.0.2 on RaderLeao-MacBook-Air.local with PID 48042 (started by raderleao in /Users/raderleao/src/dev/Workspace/admin-do-catalogo/infrastructure)
+2023-03-17 19:05:48.643  INFO 48042 --- [    Test worker] c.r.a.c.a.c.c.CreateCategoryUseCaseIT    : The following 1 profile is active: &quot;test&quot;
+2023-03-17 19:05:48.745  INFO 48042 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-17 19:05:48.750  INFO 48042 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interfaces.
+2023-03-17 19:05:48.827  INFO 48042 --- [    Test worker] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.5.13 by Redgate
+2023-03-17 19:05:48.827  INFO 48042 --- [    Test worker] o.f.c.internal.license.VersionPrinter    : See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#8.5.13
+2023-03-17 19:05:48.827  INFO 48042 --- [    Test worker] o.f.c.internal.license.VersionPrinter    : 
+2023-03-17 19:05:48.828  WARN 48042 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : master - idleTimeout is close to or more than maxLifetime, disabling it.
+2023-03-17 19:05:48.828  INFO 48042 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : master - Starting...
+2023-03-17 19:05:48.829  INFO 48042 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : master - Start completed.
+2023-03-17 19:05:48.829  INFO 48042 --- [    Test worker] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:h2:mem:/adm_videos_test (H2 2.1)
+2023-03-17 19:05:48.831  WARN 48042 --- [    Test worker] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: H2 2.1.214 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.1.210.
+2023-03-17 19:05:48.833  INFO 48042 --- [    Test worker] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.001s)
+2023-03-17 19:05:48.835  INFO 48042 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Current version of schema &quot;PUBLIC&quot;: 1
+2023-03-17 19:05:48.836  INFO 48042 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Schema &quot;PUBLIC&quot; is up to date. No migration necessary.
+2023-03-17 19:05:48.860  INFO 48042 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-17 19:05:48.864  INFO 48042 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-03-17 19:05:48.890  INFO 48042 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-17 19:05:48.891  INFO 48042 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-17 19:05:49.051  INFO 48042 --- [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:mem:/adm_videos_test'
+2023-03-17 19:05:49.074  WARN 48042 --- [    Test worker] .s.s.UserDetailsServiceAutoConfiguration : 
 
-Using generated security password: 3717f70a-2d3c-456b-b848-0a26e0c7c59b
+Using generated security password: 77a04df5-2c7f-4088-9ef6-e4834940b389
 
 This generated password is for development use only. Your security configuration must be updated before running your application in production.
 
-2023-03-17 18:16:18.356  INFO 43923 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@8ab231, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5b3a8bea, org.springframework.security.web.context.SecurityContextPersistenceFilter@7730da00, org.springframework.security.web.header.HeaderWriterFilter@4abfa2ff, org.springframework.security.web.csrf.CsrfFilter@5eb9bf7d, org.springframework.security.web.authentication.logout.LogoutFilter@6b03c35c, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@65cc3902, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@4eab9aec, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@6ba0dcba, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@37b1218, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@41948c13, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3085befb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6d7772d3, org.springframework.security.web.session.SessionManagementFilter@10bcbbce, org.springframework.security.web.access.ExceptionTranslationFilter@618e7761, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4d4bac56]
-2023-03-17 18:16:18.411  INFO 43923 --- [    Test worker] c.r.a.c.a.c.c.CreateCategoryUseCaseIT    : Started CreateCategoryUseCaseIT in 2.717 seconds (JVM running for 3.761)
+2023-03-17 19:05:49.127  INFO 48042 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@19439ec4, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6f53f5a4, org.springframework.security.web.context.SecurityContextPersistenceFilter@c10f7a8, org.springframework.security.web.header.HeaderWriterFilter@1f591b2e, org.springframework.security.web.csrf.CsrfFilter@35d4fecf, org.springframework.security.web.authentication.logout.LogoutFilter@bb160fb, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1c0a4f87, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@2f6352a3, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@21ebf9be, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@5f5076f9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@64096a41, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@33de9d85, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7d50b4c4, org.springframework.security.web.session.SessionManagementFilter@1e205025, org.springframework.security.web.access.ExceptionTranslationFilter@22195d06, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@77902ed6]
+2023-03-17 19:05:49.164  INFO 48042 --- [    Test worker] c.r.a.c.a.c.c.CreateCategoryUseCaseIT    : Started CreateCategoryUseCaseIT in 0.542 seconds (JVM running for 4.825)
+Hibernate: select categoryjp0_.id as id1_0_, categoryjp0_.active as active2_0_, categoryjp0_.created_at as created_3_0_, categoryjp0_.deleted_at as deleted_4_0_, categoryjp0_.description as descript5_0_, categoryjp0_.name as name6_0_, categoryjp0_.updated_at as updated_7_0_ from category categoryjp0_
+Hibernate: select count(*) as col_0_0_ from category categoryjp0_
+Hibernate: select categoryjp0_.id as id1_0_0_, categoryjp0_.active as active2_0_0_, categoryjp0_.created_at as created_3_0_0_, categoryjp0_.deleted_at as deleted_4_0_0_, categoryjp0_.description as descript5_0_0_, categoryjp0_.name as name6_0_0_, categoryjp0_.updated_at as updated_7_0_0_ from category categoryjp0_ where categoryjp0_.id=?
+Hibernate: insert into category (active, created_at, deleted_at, description, name, updated_at, id) values (?, ?, ?, ?, ?, ?, ?)
+Hibernate: select count(*) as col_0_0_ from category categoryjp0_
+Hibernate: select categoryjp0_.id as id1_0_0_, categoryjp0_.active as active2_0_0_, categoryjp0_.created_at as created_3_0_0_, categoryjp0_.deleted_at as deleted_4_0_0_, categoryjp0_.description as descript5_0_0_, categoryjp0_.name as name6_0_0_, categoryjp0_.updated_at as updated_7_0_0_ from category categoryjp0_ where categoryjp0_.id=?
+Hibernate: select categoryjp0_.id as id1_0_, categoryjp0_.active as active2_0_, categoryjp0_.created_at as created_3_0_, categoryjp0_.deleted_at as deleted_4_0_, categoryjp0_.description as descript5_0_, categoryjp0_.name as name6_0_, categoryjp0_.updated_at as updated_7_0_ from category categoryjp0_
+Hibernate: delete from category where id=?
+Hibernate: select categoryjp0_.id as id1_0_, categoryjp0_.active as active2_0_, categoryjp0_.created_at as created_3_0_, categoryjp0_.deleted_at as deleted_4_0_, categoryjp0_.description as descript5_0_, categoryjp0_.name as name6_0_, categoryjp0_.updated_at as updated_7_0_ from category categoryjp0_
+Hibernate: select count(*) as col_0_0_ from category categoryjp0_
+Hibernate: select count(*) as col_0_0_ from category categoryjp0_
 Hibernate: select categoryjp0_.id as id1_0_, categoryjp0_.active as active2_0_, categoryjp0_.created_at as created_3_0_, categoryjp0_.deleted_at as deleted_4_0_, categoryjp0_.description as descript5_0_, categoryjp0_.name as name6_0_, categoryjp0_.updated_at as updated_7_0_ from category categoryjp0_
 Hibernate: select count(*) as col_0_0_ from category categoryjp0_
 Hibernate: select categoryjp0_.id as id1_0_0_, categoryjp0_.active as active2_0_0_, categoryjp0_.created_at as created_3_0_0_, categoryjp0_.deleted_at as deleted_4_0_0_, categoryjp0_.description as descript5_0_0_, categoryjp0_.name as name6_0_0_, categoryjp0_.updated_at as updated_7_0_0_ from category categoryjp0_ where categoryjp0_.id=?
@@ -156,7 +171,7 @@ Hibernate: select categoryjp0_.id as id1_0_0_, categoryjp0_.active as active2_0_
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.6</a> at 17 de mar. de 2023 18:16:18</p>
+<a href="http://www.gradle.org">Gradle 7.6</a> at 17 de mar. de 2023 19:05:50</p>
 </div>
 </div>
 </body>

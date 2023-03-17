@@ -11,18 +11,16 @@
       <change beforePath="$PROJECT_DIR$/.gradle/7.6/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.6/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/build/classes/java/main/com/raderleao/admin/catalogo/infrastructure/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/build/classes/java/main/com/raderleao/admin/catalogo/infrastructure/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/build/classes/java/main/com/raderleao/admin/catalogo/infrastructure/category/CategoryMySQLGateway.class" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/build/classes/java/main/com/raderleao/admin/catalogo/infrastructure/category/CategoryMySQLGateway.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/build/classes/java/main/com/raderleao/admin/catalogo/infrastructure/category/persistence/CategoryJpaEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/build/classes/java/main/com/raderleao/admin/catalogo/infrastructure/category/persistence/CategoryJpaEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/build/classes/java/main/com/raderleao/admin/catalogo/infrastructure/category/persistence/CategoryRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/build/classes/java/main/com/raderleao/admin/catalogo/infrastructure/category/persistence/CategoryRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/build/classes/java/main/com/raderleao/admin/catalogo/infrastructure/category/utils/SpecificationUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/build/classes/java/main/com/raderleao/admin/catalogo/infrastructure/category/utils/SpecificationUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/build/classes/java/main/com/raderleao/admin/catalogo/infrastructure/category/utils/SqlUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/build/classes/java/main/com/raderleao/admin/catalogo/infrastructure/category/utils/SqlUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/build/classes/java/main/com/raderleao/admin/catalogo/infrastructure/configuration/usecases/CategoryUseCaseConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/build/classes/java/main/com/raderleao/admin/catalogo/infrastructure/configuration/usecases/CategoryUseCaseConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/build/classes/java/test/com/raderleao/admin/catalogo/CleanUpExtension.class" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/build/classes/java/test/com/raderleao/admin/catalogo/CleanUpExtension.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/build/classes/java/test/com/raderleao/admin/catalogo/MySQLGatewayTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/build/classes/java/test/com/raderleao/admin/catalogo/MySQLGatewayTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/src/test/java/com/raderleao/admin/catalogo/MySQLGatewayTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/test/java/com/raderleao/admin/catalogo/MySQLGatewayTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/build/reports/tests/test/classes/com.raderleao.admin.catalogo.application.category.create.CreateCategoryUseCaseIT.html" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/build/reports/tests/test/classes/com.raderleao.admin.catalogo.application.category.create.CreateCategoryUseCaseIT.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/build/reports/tests/test/packages/com.raderleao.admin.catalogo.application.category.create.html" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/build/reports/tests/test/packages/com.raderleao.admin.catalogo.application.category.create.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/build/test-results/test/TEST-com.raderleao.admin.catalogo.application.category.create.CreateCategoryUseCaseIT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/build/test-results/test/TEST-com.raderleao.admin.catalogo.application.category.create.CreateCategoryUseCaseIT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/build/test-results/test/binary/output.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/build/test-results/test/binary/output.bin.idx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/test/java/com/raderleao/admin/catalogo/application/category/create/CreateCategoryUseCaseIT.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/test/java/com/raderleao/admin/catalogo/application/category/create/CreateCategoryUseCaseIT.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,7 +142,7 @@
       <recent name="com.raderleao.admin.catalogo.infrastructure.category" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.CreateCategoryUseCaseIT">
+  <component name="RunManager" selected="Gradle.admin-do-catalogo [test]">
     <configuration name="Main" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.raderleao.admin.catalogo.infrastructure.Main" />
       <module name="admin-do-catalogo.infrastructure.main" />
@@ -156,29 +154,6 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
-    </configuration>
-    <configuration name="CategoryMySQLGatewayTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":infrastructure:test" />
-            <option value="--tests" />
-            <option value="&quot;com.raderleao.admin.catalogo.infrastructure.category.CategoryMySQLGatewayTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
     </configuration>
     <configuration name="CreateCategoryUseCaseIT" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -203,7 +178,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="CreateCategoryUseCaseIT.givenAValidCommand_whenCallsCreateCategory_shouldReturnCategoryId" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="CreateCategoryUseCaseIT.givenAInvalidName_whenCallsCreateCategory_thenShouldReturnDomainException" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -216,7 +191,7 @@
           <list>
             <option value=":infrastructure:test" />
             <option value="--tests" />
-            <option value="&quot;com.raderleao.admin.catalogo.application.category.create.CreateCategoryUseCaseIT.givenAValidCommand_whenCallsCreateCategory_shouldReturnCategoryId&quot;" />
+            <option value="&quot;com.raderleao.admin.catalogo.application.category.create.CreateCategoryUseCaseIT.givenAInvalidName_whenCallsCreateCategory_thenShouldReturnDomainException&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -226,7 +201,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="SampleIT" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="CreateCategoryUseCaseIT.givenAValidCommandWithInactiveCategory_whenCallsCreateCategory_shouldReturnInactiveCategoryId" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -239,7 +214,30 @@
           <list>
             <option value=":infrastructure:test" />
             <option value="--tests" />
-            <option value="&quot;com.raderleao.admin.catalogo.application.SampleIT&quot;" />
+            <option value="&quot;com.raderleao.admin.catalogo.application.category.create.CreateCategoryUseCaseIT.givenAValidCommandWithInactiveCategory_whenCallsCreateCategory_shouldReturnInactiveCategoryId&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="CreateCategoryUseCaseIT.givenAValidCommand_whenGatewayThrowsRandomException_shouldReturnException" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":infrastructure:test" />
+            <option value="--tests" />
+            <option value="&quot;com.raderleao.admin.catalogo.application.category.create.CreateCategoryUseCaseIT.givenAValidCommand_whenGatewayThrowsRandomException_shouldReturnException&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -288,19 +286,19 @@
     <list>
       <item itemvalue="Application.Main" />
       <item itemvalue="Gradle.CreateCategoryUseCaseIT" />
-      <item itemvalue="Gradle.CreateCategoryUseCaseIT.givenAValidCommand_whenCallsCreateCategory_shouldReturnCategoryId" />
-      <item itemvalue="Gradle.SampleIT" />
-      <item itemvalue="Gradle.CategoryMySQLGatewayTest" />
+      <item itemvalue="Gradle.CreateCategoryUseCaseIT.givenAInvalidName_whenCallsCreateCategory_thenShouldReturnDomainException" />
+      <item itemvalue="Gradle.CreateCategoryUseCaseIT.givenAValidCommandWithInactiveCategory_whenCallsCreateCategory_shouldReturnInactiveCategoryId" />
+      <item itemvalue="Gradle.CreateCategoryUseCaseIT.givenAValidCommand_whenGatewayThrowsRandomException_shouldReturnException" />
       <item itemvalue="Gradle.admin-do-catalogo [test]" />
       <item itemvalue="Spring Boot.Main" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.CreateCategoryUseCaseIT" />
-        <item itemvalue="Gradle.CreateCategoryUseCaseIT.givenAValidCommand_whenCallsCreateCategory_shouldReturnCategoryId" />
-        <item itemvalue="Gradle.SampleIT" />
         <item itemvalue="Gradle.admin-do-catalogo [test]" />
-        <item itemvalue="Gradle.CategoryMySQLGatewayTest" />
+        <item itemvalue="Gradle.CreateCategoryUseCaseIT.givenAValidCommand_whenGatewayThrowsRandomException_shouldReturnException" />
+        <item itemvalue="Gradle.CreateCategoryUseCaseIT.givenAValidCommandWithInactiveCategory_whenCallsCreateCategory_shouldReturnInactiveCategoryId" />
+        <item itemvalue="Gradle.CreateCategoryUseCaseIT.givenAInvalidName_whenCallsCreateCategory_thenShouldReturnDomainException" />
+        <item itemvalue="Gradle.CreateCategoryUseCaseIT" />
       </list>
     </recent_temporary>
   </component>
@@ -319,6 +317,7 @@
       <workItem from="1678830179483" duration="49241000" />
       <workItem from="1678976548565" duration="18058000" />
       <workItem from="1679087050743" duration="434000" />
+      <workItem from="1679087502328" duration="2723000" />
     </task>
     <servers />
   </component>
