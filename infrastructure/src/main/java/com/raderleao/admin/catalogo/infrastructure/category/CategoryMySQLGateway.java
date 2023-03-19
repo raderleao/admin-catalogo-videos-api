@@ -14,7 +14,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.Optional;
 
-import static com.raderleao.admin.catalogo.infrastructure.category.utils.SpecificationUtils.like;
+import static com.raderleao.admin.catalogo.infrastructure.utils.SpecificationUtils.like;
 import static org.springframework.data.domain.Sort.*;
 
 @Service
