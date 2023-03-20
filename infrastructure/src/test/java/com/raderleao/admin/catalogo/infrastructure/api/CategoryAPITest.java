@@ -5,9 +5,9 @@ import com.raderleao.admin.catalogo.ControllerTest;
 import com.raderleao.admin.catalogo.application.category.create.CreateCategoryOutput;
 import com.raderleao.admin.catalogo.application.category.create.CreateCategoryUseCase;
 import com.raderleao.admin.catalogo.domain.exceptions.DomainException;
+import com.raderleao.admin.catalogo.domain.validation.Error;
 import com.raderleao.admin.catalogo.domain.validation.handler.Notification;
 import com.raderleao.admin.catalogo.infrastructure.category.models.CreateCategoryRequest;
-import com.raderleao.admin.catalogo.domain.validation.Error;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.mock.mockito.MockBean;
@@ -103,6 +103,7 @@ public class CategoryAPITest {
 
     @Test
     public void givenAInvalidCommand_whenCallsCreateCategory_thenShouldReturnDomainException() throws Exception {
+        // given
         final String expectedName = null;
         final var expectedDescription = "A categoria mais assistida";
         final var expectedIsActive = true;
@@ -119,11 +120,14 @@ public class CategoryAPITest {
                 .contentType(MediaType.APPLICATION_JSON)
                 .content(this.mapper.writeValueAsString(aInput));
 
-        this.mvc.perform(request)
-                .andDo(print())
-                .andExpect(status().isUnprocessableEntity())
+        final var response = this.mvc.perform(request)
+                .andDo(print());
+
+        // then
+        response.andExpect(status().isUnprocessableEntity())
                 .andExpect(header().string("Location", nullValue()))
                 .andExpect(header().string("Content-Type", MediaType.APPLICATION_JSON_VALUE))
+                .andExpect(jsonPath("$.message", equalTo(expectedMessage)))
                 .andExpect(jsonPath("$.errors", hasSize(1)))
                 .andExpect(jsonPath("$.errors[0].message", equalTo(expectedMessage)));
 
@@ -133,4 +137,5 @@ public class CategoryAPITest {
                         && Objects.equals(expectedIsActive, cmd.isActive())
         ));
     }
+
 }
