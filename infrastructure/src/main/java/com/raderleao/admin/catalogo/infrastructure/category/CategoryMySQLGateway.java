@@ -3,8 +3,8 @@ package com.raderleao.admin.catalogo.infrastructure.category;
 import com.raderleao.admin.catalogo.domain.category.Category;
 import com.raderleao.admin.catalogo.domain.category.CategoryGateway;
 import com.raderleao.admin.catalogo.domain.category.CategoryID;
-import com.raderleao.admin.catalogo.domain.category.CategorySearchQuery;
 import com.raderleao.admin.catalogo.domain.pagination.Pagination;
+import com.raderleao.admin.catalogo.domain.pagination.SearchQuery;
 import com.raderleao.admin.catalogo.infrastructure.category.persistence.CategoryJpaEntity;
 import com.raderleao.admin.catalogo.infrastructure.category.persistence.CategoryRepository;
 import org.springframework.data.domain.PageRequest;
@@ -51,7 +51,7 @@ public class CategoryMySQLGateway implements CategoryGateway {
     }
 
     @Override
-    public Pagination<Category> findAll(final CategorySearchQuery aQuery) {
+    public Pagination<Category> findAll(final SearchQuery aQuery) {
         // Paginação
         final var page = PageRequest.of(
                 aQuery.page(),

@@ -6,8 +6,10 @@ import com.raderleao.admin.catalogo.domain.category.CategoryGateway;
 import com.raderleao.admin.catalogo.domain.category.CategoryID;
 import com.raderleao.admin.catalogo.infrastructure.category.persistence.CategoryJpaEntity;
 import com.raderleao.admin.catalogo.infrastructure.category.persistence.CategoryRepository;
+
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.mock.mockito.SpyBean;
 

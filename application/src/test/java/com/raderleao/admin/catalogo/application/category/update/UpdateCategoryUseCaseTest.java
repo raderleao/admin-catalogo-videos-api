@@ -4,6 +4,7 @@ import com.raderleao.admin.catalogo.domain.category.Category;
 import com.raderleao.admin.catalogo.domain.category.CategoryGateway;
 import com.raderleao.admin.catalogo.domain.category.CategoryID;
 import com.raderleao.admin.catalogo.domain.exceptions.DomainException;
+import com.raderleao.admin.catalogo.domain.exceptions.NotFoundException;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -219,10 +220,9 @@ public class UpdateCategoryUseCaseTest {
                 .thenReturn(Optional.empty());
 
         final var actualException =
-                Assertions.assertThrows(DomainException.class, () -> useCase.execute(aCommand));
+                Assertions.assertThrows(NotFoundException.class, () -> useCase.execute(aCommand));
 
-        Assertions.assertEquals(expectedErrorCount, actualException.getErrors().size());
-        Assertions.assertEquals(expectedErrorMessage, actualException.getErrors().get(0).message());
+        Assertions.assertEquals(expectedErrorMessage, actualException.getMessage());
 
         verify(categoryGateway, times(1)).findById(eq(CategoryID.from(expectedId)));
         verify(categoryGateway, times(0)).update(any());
