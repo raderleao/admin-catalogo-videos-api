@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.034s</div>
+<div class="counter">0.024s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,17 +79,17 @@
 </thead>
 <tr>
 <td class="success">givenAInvalidId_whenCallsDeleteCategory_shouldBeOK()</td>
-<td class="success">0.008s</td>
+<td class="success">0.005s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">givenAValidId_whenCallsDeleteCategory_shouldBeOK()</td>
-<td class="success">0.020s</td>
+<td class="success">0.015s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">givenAValidId_whenGatewayThrowsException_shouldReturnException()</td>
-<td class="success">0.006s</td>
+<td class="success">0.004s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -97,10 +97,10 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>2023-03-17 23:40:43.824  INFO 69287 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.raderleao.admin.catalogo.application.category.delete.DeteleCategoryUseCaseIT], using SpringBootContextLoader
-2023-03-17 23:40:43.825  INFO 69287 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.raderleao.admin.catalogo.application.category.delete.DeteleCategoryUseCaseIT]: no resource found for suffixes {-context.xml, Context.groovy}.
-2023-03-17 23:40:43.827  INFO 69287 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
-2023-03-17 23:40:43.827  INFO 69287 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@34128fed, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@10efb806, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@4dfe56dc, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@2a728076, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@a3f1f32, org.springframework.test.context.support.DirtiesContextTestExecutionListener@67fda9fb, org.springframework.test.context.transaction.TransactionalTestExecutionListener@580a5b6e, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@66450129, org.springframework.test.context.event.EventPublishingTestExecutionListener@14f1545c, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@1ec98548, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@14927cd4, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@5a106b26, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@445d878c, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@16eca98a, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@119f035f]
+<pre>2023-03-21 02:28:42.527  INFO 62812 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.raderleao.admin.catalogo.application.category.delete.DeteleCategoryUseCaseIT], using SpringBootContextLoader
+2023-03-21 02:28:42.527  INFO 62812 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.raderleao.admin.catalogo.application.category.delete.DeteleCategoryUseCaseIT]: no resource found for suffixes {-context.xml, Context.groovy}.
+2023-03-21 02:28:42.529  INFO 62812 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2023-03-21 02:28:42.529  INFO 62812 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@64404db6, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@62f63625, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@53f18591, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@4dfbe8c2, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@2bb03136, org.springframework.test.context.support.DirtiesContextTestExecutionListener@78a46d7b, org.springframework.test.context.transaction.TransactionalTestExecutionListener@2726b2f3, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@3509f32d, org.springframework.test.context.event.EventPublishingTestExecutionListener@1f9a5d3b, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@440e2406, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@56adb75e, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@2cc7b63d, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@6179551b, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@54626326, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@6f4e39b3]
 Hibernate: select categoryjp0_.id as id1_0_, categoryjp0_.active as active2_0_, categoryjp0_.created_at as created_3_0_, categoryjp0_.deleted_at as deleted_4_0_, categoryjp0_.description as descript5_0_, categoryjp0_.name as name6_0_, categoryjp0_.updated_at as updated_7_0_ from category categoryjp0_
 Hibernate: delete from category where id=?
 Hibernate: select categoryjp0_.id as id1_0_0_, categoryjp0_.active as active2_0_0_, categoryjp0_.created_at as created_3_0_0_, categoryjp0_.deleted_at as deleted_4_0_0_, categoryjp0_.description as descript5_0_0_, categoryjp0_.name as name6_0_0_, categoryjp0_.updated_at as updated_7_0_0_ from category categoryjp0_ where categoryjp0_.id=?
@@ -126,7 +126,7 @@ Hibernate: select categoryjp0_.id as id1_0_, categoryjp0_.active as active2_0_, 
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.6</a> at 17 de mar. de 2023 23:40:45</p>
+<a href="http://www.gradle.org">Gradle 7.6</a> at 21 de mar. de 2023 02:28:45</p>
 </div>
 </div>
 </body>

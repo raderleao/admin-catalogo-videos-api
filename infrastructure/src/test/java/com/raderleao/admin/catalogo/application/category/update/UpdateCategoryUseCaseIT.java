@@ -1,17 +1,17 @@
 package com.raderleao.admin.catalogo.application.category.update;
+
 import com.raderleao.admin.catalogo.IntegrationTest;
 import com.raderleao.admin.catalogo.domain.category.Category;
 import com.raderleao.admin.catalogo.domain.category.CategoryGateway;
-import com.raderleao.admin.catalogo.domain.category.CategoryID;
-import com.raderleao.admin.catalogo.domain.exceptions.DomainException;
+import com.raderleao.admin.catalogo.domain.exceptions.NotFoundException;
 import com.raderleao.admin.catalogo.infrastructure.category.persistence.CategoryJpaEntity;
 import com.raderleao.admin.catalogo.infrastructure.category.persistence.CategoryRepository;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.mock.mockito.SpyBean;
+
 import java.util.Arrays;
-import java.util.Optional;
 
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.*;
@@ -180,7 +180,6 @@ public class UpdateCategoryUseCaseIT {
         final var expectedDescription = "A categoria mais assistida";
         final var expectedIsActive = false;
         final var expectedId = "123";
-        final var expectedErrorCount = 1;
         final var expectedErrorMessage = "Category with ID 123 was not found";
 
         final var aCommand = UpdateCategoryCommand.with(
@@ -191,10 +190,9 @@ public class UpdateCategoryUseCaseIT {
         );
 
         final var actualException =
-                Assertions.assertThrows(DomainException.class, () -> useCase.execute(aCommand));
+                Assertions.assertThrows(NotFoundException.class, () -> useCase.execute(aCommand));
 
-        Assertions.assertEquals(expectedErrorCount, actualException.getErrors().size());
-        Assertions.assertEquals(expectedErrorMessage, actualException.getErrors().get(0).message());
+        Assertions.assertEquals(expectedErrorMessage, actualException.getMessage());
 
     }
 

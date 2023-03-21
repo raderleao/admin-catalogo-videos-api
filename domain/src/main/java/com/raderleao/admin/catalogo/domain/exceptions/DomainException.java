@@ -21,6 +21,7 @@ public class DomainException extends NoStacktraceException {
         return new DomainException("", anErrors);
     }
 
+
     public List<Error> getErrors() {
         return errors;
     }
