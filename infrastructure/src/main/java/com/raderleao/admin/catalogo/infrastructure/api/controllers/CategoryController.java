@@ -4,7 +4,6 @@ import com.raderleao.admin.catalogo.application.category.create.CreateCategoryCo
 import com.raderleao.admin.catalogo.application.category.create.CreateCategoryOutput;
 import com.raderleao.admin.catalogo.application.category.create.CreateCategoryUseCase;
 import com.raderleao.admin.catalogo.application.category.delete.DeleteCategoryUseCase;
-import com.raderleao.admin.catalogo.application.category.retrieve.get.CategoryOutput;
 import com.raderleao.admin.catalogo.application.category.retrieve.get.GetCategoryByIdUseCase;
 import com.raderleao.admin.catalogo.application.category.retrieve.list.ListCategoriesUseCase;
 import com.raderleao.admin.catalogo.application.category.update.UpdateCategoryCommand;

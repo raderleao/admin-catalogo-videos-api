@@ -13,7 +13,7 @@ import org.springframework.test.context.ActiveProfiles;
 
 import java.util.List;
 
-@ActiveProfiles("test")
+@ActiveProfiles("test-integration")
 @MySQLGatewayTest
 public class CategoryMySQLGatewayTest {
 
