@@ -1,28 +1,27 @@
-package com.raderleao.admin.catalogo.domain.category;
+package com.raderleao.admin.catalogo.domain.genre;
 
 import com.raderleao.admin.catalogo.domain.validation.Error;
 import com.raderleao.admin.catalogo.domain.validation.ValidationHandler;
 import com.raderleao.admin.catalogo.domain.validation.Validator;
 
-public class CategoryValidator extends Validator {
+public class GenreValidator extends Validator {
 
     public static final int NAME_MAX_LENGTH = 255;
-    public static final int NAME_MIN_LENGTH = 3;
-    private final Category category;
+    public static final int NAME_MIN_LENGTH = 1;
+    private final Genre genre;
 
-    public CategoryValidator(final Category aCategory, final ValidationHandler aHandler) {
+    protected GenreValidator(final Genre aGenre, final ValidationHandler aHandler) {
         super(aHandler);
-        this.category = aCategory;
+        this.genre = aGenre;
     }
 
     @Override
     public void validate() {
-
         checkNameConstraints();
     }
 
     private void checkNameConstraints() {
-        final var name = this.category.getName();
+        final var name = this.genre.getName();
         if (name == null) {
             this.validationHandler().append(new Error("'name' should not be null"));
             return;
@@ -35,7 +34,7 @@ public class CategoryValidator extends Validator {
 
         final int length = name.strip().length();
         if (length > NAME_MAX_LENGTH || length < NAME_MIN_LENGTH) {
-            this.validationHandler().append(new Error("'name' must be between 3 and 255 characters"));
+            this.validationHandler().append(new Error("'name' must be between 1 and 255 characters"));
         }
     }
 }
