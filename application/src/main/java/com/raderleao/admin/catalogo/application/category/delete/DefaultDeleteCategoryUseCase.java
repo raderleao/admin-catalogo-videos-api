@@ -13,6 +13,7 @@ public class DefaultDeleteCategoryUseCase extends DeleteCategoryUseCase {
 
     @Override
     public void execute(final String anIn) {
-        this.categoryGateway.deleteById(CategoryID.from(anIn));
+        this.categoryGateway.deleteById(
+                CategoryID.from(anIn));
     }
 }

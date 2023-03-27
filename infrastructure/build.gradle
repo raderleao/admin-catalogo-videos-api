@@ -31,6 +31,7 @@ dependencies {
     implementation(project(":application"))
 
     implementation('mysql:mysql-connector-java')
+    implementation ('io.vavr:vavr:0.10.4')
 
     implementation('org.springdoc:springdoc-openapi-webmvc-core:1.6.8')
     implementation('org.springdoc:springdoc-openapi-ui:1.6.8')
@@ -41,13 +42,18 @@ dependencies {
 
     implementation "org.springframework.boot:spring-boot-starter-undertow"
     implementation "org.springframework.boot:spring-boot-starter-data-jpa"
-    implementation 'io.vavr:vavr:0.10.4'
+
 
     implementation 'com.fasterxml.jackson.module:jackson-module-afterburner:2.13.1'
 
 
     testImplementation('org.flywaydb:flyway-core:')
+    testImplementation('org.flywaydb:flyway-mysql')
     testImplementation ('org.springframework.boot:spring-boot-starter-test')
+
+    testImplementation('org.testcontainers:testcontainers-bom:1.17.6')
+    testImplementation('org.testcontainers:mysql:1.17.6')
+    testImplementation('org.testcontainers:junit-jupiter:1.17.6')
 
     testRuntimeOnly('com.h2database:h2')
 
@@ -59,6 +65,7 @@ flyway {
     password = System.getenv('FLYWAY_PASS') ?: '123456'
     cleanDisabled = false
 }
+
 
 test {
     useJUnitPlatform()
