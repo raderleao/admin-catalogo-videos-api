@@ -5,64 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="520d2c9a-ac28-4f30-85f3-da225c95735b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/com/raderleao/admin/catalogo/domain/genre/GenreGateway.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/com/raderleao/admin/catalogo/domain/utils/InstantUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.6/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.6/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.6/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.6/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.6/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/src/main/java/com/raderleao/admin/catalogo/application/genre/create/CreateGenreCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/src/main/java/com/raderleao/admin/catalogo/application/genre/create/CreateGenreOutput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/src/main/java/com/raderleao/admin/catalogo/application/genre/create/CreateGenreUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/src/main/java/com/raderleao/admin/catalogo/application/genre/create/DefaultCreateGenreUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/src/test/java/com/raderleao/admin/catalogo/application/genre/create/CreateGenreUseCaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/build/reports/tests/test/classes/com.raderleao.admin.catalogo.application.UseCaseTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/build/reports/tests/test/classes/com.raderleao.admin.catalogo.application.UseCaseTest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/build/reports/tests/test/classes/com.raderleao.admin.catalogo.application.category.create.CreateCategoryUseCaseTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/build/reports/tests/test/classes/com.raderleao.admin.catalogo.application.category.create.CreateCategoryUseCaseTest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/build/reports/tests/test/classes/com.raderleao.admin.catalogo.application.category.delete.DeteleCategoryUseCaseTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/build/reports/tests/test/classes/com.raderleao.admin.catalogo.application.category.delete.DeteleCategoryUseCaseTest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/build/reports/tests/test/classes/com.raderleao.admin.catalogo.application.category.retrieve.get.GetCategoryByIdUseCaseTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/build/reports/tests/test/classes/com.raderleao.admin.catalogo.application.category.retrieve.get.GetCategoryByIdUseCaseTest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/build/reports/tests/test/classes/com.raderleao.admin.catalogo.application.category.retrieve.list.ListCategoriesUseCaseTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/build/reports/tests/test/classes/com.raderleao.admin.catalogo.application.category.retrieve.list.ListCategoriesUseCaseTest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/build/reports/tests/test/classes/com.raderleao.admin.catalogo.application.category.update.UpdateCategoryUseCaseTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/build/reports/tests/test/classes/com.raderleao.admin.catalogo.application.category.update.UpdateCategoryUseCaseTest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/build/reports/tests/test/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/build/reports/tests/test/packages/com.raderleao.admin.catalogo.application.category.create.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/build/reports/tests/test/packages/com.raderleao.admin.catalogo.application.category.create.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/build/reports/tests/test/packages/com.raderleao.admin.catalogo.application.category.delete.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/build/reports/tests/test/packages/com.raderleao.admin.catalogo.application.category.delete.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/build/reports/tests/test/packages/com.raderleao.admin.catalogo.application.category.retrieve.get.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/build/reports/tests/test/packages/com.raderleao.admin.catalogo.application.category.retrieve.get.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/build/reports/tests/test/packages/com.raderleao.admin.catalogo.application.category.retrieve.list.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/build/reports/tests/test/packages/com.raderleao.admin.catalogo.application.category.retrieve.list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/build/reports/tests/test/packages/com.raderleao.admin.catalogo.application.category.update.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/build/reports/tests/test/packages/com.raderleao.admin.catalogo.application.category.update.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/build/reports/tests/test/packages/com.raderleao.admin.catalogo.application.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/build/reports/tests/test/packages/com.raderleao.admin.catalogo.application.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/build/test-results/test/TEST-com.raderleao.admin.catalogo.application.UseCaseTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/application/build/test-results/test/TEST-com.raderleao.admin.catalogo.application.UseCaseTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/build/test-results/test/TEST-com.raderleao.admin.catalogo.application.category.create.CreateCategoryUseCaseTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/application/build/test-results/test/TEST-com.raderleao.admin.catalogo.application.category.create.CreateCategoryUseCaseTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/build/test-results/test/TEST-com.raderleao.admin.catalogo.application.category.delete.DeteleCategoryUseCaseTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/application/build/test-results/test/TEST-com.raderleao.admin.catalogo.application.category.delete.DeteleCategoryUseCaseTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/build/test-results/test/TEST-com.raderleao.admin.catalogo.application.category.retrieve.get.GetCategoryByIdUseCaseTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/application/build/test-results/test/TEST-com.raderleao.admin.catalogo.application.category.retrieve.get.GetCategoryByIdUseCaseTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/build/test-results/test/TEST-com.raderleao.admin.catalogo.application.category.retrieve.list.ListCategoriesUseCaseTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/application/build/test-results/test/TEST-com.raderleao.admin.catalogo.application.category.retrieve.list.ListCategoriesUseCaseTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/build/test-results/test/TEST-com.raderleao.admin.catalogo.application.category.update.UpdateCategoryUseCaseTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/application/build/test-results/test/TEST-com.raderleao.admin.catalogo.application.category.update.UpdateCategoryUseCaseTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/application/build/test-results/test/binary/results.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/build/classes/java/main/com/raderleao/admin/catalogo/domain/genre/Genre.class" beforeDir="false" afterPath="$PROJECT_DIR$/domain/build/classes/java/main/com/raderleao/admin/catalogo/domain/genre/Genre.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/build/classes/java/test/com/raderleao/admin/catalogo/domain/genre/GenreTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/domain/build/classes/java/test/com/raderleao/admin/catalogo/domain/genre/GenreTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/build/reports/tests/test/classes/com.raderleao.admin.catalogo.domain.genre.GenreTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/domain/build/reports/tests/test/classes/com.raderleao.admin.catalogo.domain.genre.GenreTest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/domain/build/reports/tests/test/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/build/reports/tests/test/packages/com.raderleao.admin.catalogo.domain.genre.html" beforeDir="false" afterPath="$PROJECT_DIR$/domain/build/reports/tests/test/packages/com.raderleao.admin.catalogo.domain.genre.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/build/test-results/test/TEST-com.raderleao.admin.catalogo.domain.genre.GenreTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/domain/build/test-results/test/TEST-com.raderleao.admin.catalogo.domain.genre.GenreTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/domain/build/test-results/test/binary/results.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/build/tmp/compileJava/compileTransaction/stash-dir/Genre.class.uniqueId0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/build/tmp/compileJava/compileTransaction/stash-dir/GenreValidator.class.uniqueId2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/build/tmp/compileJava/compileTransaction/stash-dir/NotificationException.class.uniqueId1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/domain/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/build/tmp/compileTestJava/compileTransaction/stash-dir/GenreTest.class.uniqueId0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/domain/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/com/raderleao/admin/catalogo/domain/genre/Genre.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/com/raderleao/admin/catalogo/domain/genre/Genre.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/test/java/com/raderleao/admin/catalogo/domain/genre/GenreTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/test/java/com/raderleao/admin/catalogo/domain/genre/GenreTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/build/classes/java/test/com/raderleao/admin/catalogo/e2e/category/CategoryE2ETest.class" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/build/classes/java/test/com/raderleao/admin/catalogo/e2e/category/CategoryE2ETest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/build/reports/tests/test/classes/com.raderleao.admin.catalogo.e2e.category.CategoryE2ETest.html" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/build/reports/tests/test/classes/com.raderleao.admin.catalogo.e2e.category.CategoryE2ETest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/build/reports/tests/test/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/build/reports/tests/test/packages/com.raderleao.admin.catalogo.e2e.category.html" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/build/reports/tests/test/packages/com.raderleao.admin.catalogo.e2e.category.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/build/test-results/test/TEST-com.raderleao.admin.catalogo.e2e.category.CategoryE2ETest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/build/test-results/test/TEST-com.raderleao.admin.catalogo.e2e.category.CategoryE2ETest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/build/test-results/test/binary/output.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/build/test-results/test/binary/output.bin.idx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/build/test-results/test/binary/results.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/build/tmp/compileJava/compileTransaction/stash-dir/CategoryAPI.class.uniqueId1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/build/tmp/compileJava/compileTransaction/stash-dir/CategoryApiPresenter.class.uniqueId3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/build/tmp/compileJava/compileTransaction/stash-dir/CategoryController.class.uniqueId0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/build/tmp/compileJava/compileTransaction/stash-dir/CategoryListResponse.class.uniqueId2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/src/main/java/com/raderleao/admin/catalogo/application/category/create/DefaultCreateCategoryUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/main/java/com/raderleao/admin/catalogo/application/category/create/DefaultCreateCategoryUseCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/src/test/java/com/raderleao/admin/catalogo/application/UseCaseTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/com/raderleao/admin/catalogo/domain/category/CategoryGateway.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/com/raderleao/admin/catalogo/domain/category/CategoryGateway.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/com/raderleao/admin/catalogo/domain/validation/ValidationHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/com/raderleao/admin/catalogo/domain/validation/ValidationHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/com/raderleao/admin/catalogo/domain/validation/handler/Notification.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/com/raderleao/admin/catalogo/domain/validation/handler/Notification.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/com/raderleao/admin/catalogo/domain/validation/handler/ThrowsValidationHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/com/raderleao/admin/catalogo/domain/validation/handler/ThrowsValidationHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/com/raderleao/admin/catalogo/infrastructure/category/CategoryMySQLGateway.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/main/java/com/raderleao/admin/catalogo/infrastructure/category/CategoryMySQLGateway.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,6 +101,24 @@
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="verification" type="c8890929:TasksNode$1" />
               </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="admin-do-catalogo" type="f1a62948:ProjectNode" />
+                <item name="infrastructure" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="admin-do-catalogo" type="f1a62948:ProjectNode" />
+                <item name="infrastructure" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="admin-do-catalogo" type="f1a62948:ProjectNode" />
+                <item name="infrastructure" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="verification" type="c8890929:TasksNode$1" />
+              </path>
             </expand>
             <select />
           </tree_state>
@@ -156,11 +129,11 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Record" />
         <option value="Enum" />
         <option value="AnnotationType" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Record" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -228,6 +201,7 @@
       <recent name="com.raderleao.admin.catalogo.infrastructure.category" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.raderleao.admin.catalogo.application.genre.create" />
       <recent name="com.raderleao.admin.catalogo.infrastructure.category.models" />
       <recent name="com.raderleao.admin.catalogo.domain.exceptions" />
     </key>
@@ -414,7 +388,7 @@
       <workItem from="1679282053616" duration="11799000" />
       <workItem from="1679340864253" duration="22967000" />
       <workItem from="1679407584507" duration="17082000" />
-      <workItem from="1679870481927" duration="35406000" />
+      <workItem from="1679870481927" duration="42937000" />
     </task>
     <servers />
   </component>
