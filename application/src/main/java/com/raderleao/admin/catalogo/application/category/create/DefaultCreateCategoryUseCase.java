@@ -24,7 +24,7 @@ public class DefaultCreateCategoryUseCase extends CreateCategoryUseCase {
 
         final var notification = Notification.create();
 
-        final var aCategory = Category.newCategory(aName,aDescription, isActive);
+        final var aCategory = Category.newCategory(aName, aDescription, isActive);
         aCategory.validate(notification);
 
         return notification.hasError() ? Left(notification) : create(aCategory);
