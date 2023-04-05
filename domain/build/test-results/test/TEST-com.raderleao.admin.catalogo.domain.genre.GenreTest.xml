@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.raderleao.admin.catalogo.domain.genre.GenreTest" tests="15" skipped="0" failures="0" errors="0" timestamp="2023-03-28T04:13:56" hostname="RaderLeao-MacBook-Air.local" time="0.045">
+<testsuite name="com.raderleao.admin.catalogo.domain.genre.GenreTest" tests="15" skipped="0" failures="0" errors="0" timestamp="2023-04-03T01:05:11" hostname="RaderLeao-MacBook-Air.local" time="0.01">
   <properties/>
-  <testcase name="givenAValidEmptyCategoriesGenre_whenCallAddCategory_shouldReceiveOK()" classname="com.raderleao.admin.catalogo.domain.genre.GenreTest" time="0.005"/>
-  <testcase name="givenAValidGenre_whenCallUpdateWithNullName_shouldReceiveNotificationException()" classname="com.raderleao.admin.catalogo.domain.genre.GenreTest" time="0.004"/>
+  <testcase name="givenAValidEmptyCategoriesGenre_whenCallAddCategory_shouldReceiveOK()" classname="com.raderleao.admin.catalogo.domain.genre.GenreTest" time="0.002"/>
+  <testcase name="givenAValidGenre_whenCallUpdateWithNullName_shouldReceiveNotificationException()" classname="com.raderleao.admin.catalogo.domain.genre.GenreTest" time="0.001"/>
   <testcase name="givenAValidInactiveGenre_whenCallUpdateWithActivate_shouldReceiveGenreUpdated()" classname="com.raderleao.admin.catalogo.domain.genre.GenreTest" time="0.001"/>
   <testcase name="givenAInvalidNullAsCategoryID_whenCallAddCategory_shouldReceiveOK()" classname="com.raderleao.admin.catalogo.domain.genre.GenreTest" time="0.0"/>
-  <testcase name="givenAValidGenreWithTwoCategories_whenCallRemoveCategory_shouldReceiveOK()" classname="com.raderleao.admin.catalogo.domain.genre.GenreTest" time="0.001"/>
+  <testcase name="givenAValidGenreWithTwoCategories_whenCallRemoveCategory_shouldReceiveOK()" classname="com.raderleao.admin.catalogo.domain.genre.GenreTest" time="0.0"/>
   <testcase name="givenAValidGenre_whenCallUpdateWithNullCategories_shouldReceiveOK()" classname="com.raderleao.admin.catalogo.domain.genre.GenreTest" time="0.001"/>
-  <testcase name="givenAnInactiveGenre_whenCallActivete_shouldReceiveOK()" classname="com.raderleao.admin.catalogo.domain.genre.GenreTest" time="0.001"/>
-  <testcase name="givenValidParams_whenCallNewGenre_shouldInstantiateAGenre()" classname="com.raderleao.admin.catalogo.domain.genre.GenreTest" time="0.001"/>
-  <testcase name="givenAValidActiveGenre_whenCallUpdateWithInactivate_shouldReceiveGenreUpdated()" classname="com.raderleao.admin.catalogo.domain.genre.GenreTest" time="0.002"/>
-  <testcase name="givenAnVInvalidNullAsCategoryID_whenCallRemoveCategory_shouldReceiveOK()" classname="com.raderleao.admin.catalogo.domain.genre.GenreTest" time="0.002"/>
-  <testcase name="givenAValidGenre_whenCallUpdateWithEmptyName_shouldReceiveNotificationException()" classname="com.raderleao.admin.catalogo.domain.genre.GenreTest" time="0.002"/>
-  <testcase name="givenInvalidNullName_whenCallNewGenreAndValidate_shouldReceiveAError()" classname="com.raderleao.admin.catalogo.domain.genre.GenreTest" time="0.002"/>
-  <testcase name="givenInvalidNameWithLengthGreaterThan255_whenCallNewGenreAndValidate_shouldReceiveAError()" classname="com.raderleao.admin.catalogo.domain.genre.GenreTest" time="0.001"/>
-  <testcase name="givenAnActiveGenre_whenCallDeactivete_shouldReceiveOK()" classname="com.raderleao.admin.catalogo.domain.genre.GenreTest" time="0.002"/>
-  <testcase name="givenInvalidEmpityName_whenCallNewGenreAndValidate_shouldReceiveAError()" classname="com.raderleao.admin.catalogo.domain.genre.GenreTest" time="0.001"/>
+  <testcase name="givenAnInactiveGenre_whenCallActivete_shouldReceiveOK()" classname="com.raderleao.admin.catalogo.domain.genre.GenreTest" time="0.0"/>
+  <testcase name="givenValidParams_whenCallNewGenre_shouldInstantiateAGenre()" classname="com.raderleao.admin.catalogo.domain.genre.GenreTest" time="0.0"/>
+  <testcase name="givenAValidActiveGenre_whenCallUpdateWithInactivate_shouldReceiveGenreUpdated()" classname="com.raderleao.admin.catalogo.domain.genre.GenreTest" time="0.0"/>
+  <testcase name="givenAnVInvalidNullAsCategoryID_whenCallRemoveCategory_shouldReceiveOK()" classname="com.raderleao.admin.catalogo.domain.genre.GenreTest" time="0.0"/>
+  <testcase name="givenAValidGenre_whenCallUpdateWithEmptyName_shouldReceiveNotificationException()" classname="com.raderleao.admin.catalogo.domain.genre.GenreTest" time="0.0"/>
+  <testcase name="givenInvalidNullName_whenCallNewGenreAndValidate_shouldReceiveAError()" classname="com.raderleao.admin.catalogo.domain.genre.GenreTest" time="0.0"/>
+  <testcase name="givenInvalidNameWithLengthGreaterThan255_whenCallNewGenreAndValidate_shouldReceiveAError()" classname="com.raderleao.admin.catalogo.domain.genre.GenreTest" time="0.0"/>
+  <testcase name="givenAnActiveGenre_whenCallDeactivete_shouldReceiveOK()" classname="com.raderleao.admin.catalogo.domain.genre.GenreTest" time="0.0"/>
+  <testcase name="givenInvalidEmpityName_whenCallNewGenreAndValidate_shouldReceiveAError()" classname="com.raderleao.admin.catalogo.domain.genre.GenreTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
