@@ -137,6 +137,7 @@ public class Category extends AggregateRoot<CategoryID> implements Cloneable {
         return deletedAt;
     }
 
+    // Clonar uma categoria
     @Override
     public Category clone() {
         try {
