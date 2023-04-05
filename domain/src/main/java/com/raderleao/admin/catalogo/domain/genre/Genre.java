@@ -148,6 +148,7 @@ public class Genre extends AggregateRoot<GenreID> {
         return this;
     }
 
+    // add categorias ao genre
     public Genre addCategories(final List<CategoryID> categories){
         if (categories == null || categories.isEmpty()) {
             return this;
