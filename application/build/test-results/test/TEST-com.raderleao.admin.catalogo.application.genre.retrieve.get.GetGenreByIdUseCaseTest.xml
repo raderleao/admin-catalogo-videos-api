@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.raderleao.admin.catalogo.application.genre.retrieve.get.GetGenreByIdUseCaseTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-04-03T01:05:10" hostname="RaderLeao-MacBook-Air.local" time="0.004">
-  <properties/>
-  <testcase name="givenAValidId_whenCallsGetGenre_shouldReturnGenre()" classname="com.raderleao.admin.catalogo.application.genre.retrieve.get.GetGenreByIdUseCaseTest" time="0.002"/>
-  <testcase name="givenAValidId_whenCallsGetGenreAndDoesNotExists_shouldReturnNotFound()" classname="com.raderleao.admin.catalogo.application.genre.retrieve.get.GetGenreByIdUseCaseTest" time="0.001"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
