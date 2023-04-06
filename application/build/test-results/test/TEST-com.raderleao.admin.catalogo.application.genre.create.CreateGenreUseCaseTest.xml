@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.raderleao.admin.catalogo.application.genre.create.CreateGenreUseCaseTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2023-04-06T17:31:32" hostname="RaderLeao-MacBook-Air.local" time="0.035">
+<testsuite name="com.raderleao.admin.catalogo.application.genre.create.CreateGenreUseCaseTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2023-04-06T18:18:44" hostname="RaderLeao-MacBook-Air.local" time="0.025">
   <properties/>
-  <testcase name="givenAInvalidEmptyName_whenCallsCreateGenre_shouldReturnDomainException()" classname="com.raderleao.admin.catalogo.application.genre.create.CreateGenreUseCaseTest" time="0.019"/>
+  <testcase name="givenAInvalidEmptyName_whenCallsCreateGenre_shouldReturnDomainException()" classname="com.raderleao.admin.catalogo.application.genre.create.CreateGenreUseCaseTest" time="0.015"/>
   <testcase name="givenAValidCommand_whenCallsCreateGenre_shouldReturnGenreId()" classname="com.raderleao.admin.catalogo.application.genre.create.CreateGenreUseCaseTest" time="0.002"/>
   <testcase name="givenAInvalidNullName_whenCallsCreateGenre_shouldReturnDomainException()" classname="com.raderleao.admin.catalogo.application.genre.create.CreateGenreUseCaseTest" time="0.001"/>
-  <testcase name="givenAInvalidName_whenCallsCreateGenreAndSomeCategoriesDoesNotExists_shouldReturnDomainException()" classname="com.raderleao.admin.catalogo.application.genre.create.CreateGenreUseCaseTest" time="0.002"/>
+  <testcase name="givenAInvalidName_whenCallsCreateGenreAndSomeCategoriesDoesNotExists_shouldReturnDomainException()" classname="com.raderleao.admin.catalogo.application.genre.create.CreateGenreUseCaseTest" time="0.001"/>
   <testcase name="givenAValidCommandWithCategories_whenCallsCreateGenre_shouldReturnGenreId()" classname="com.raderleao.admin.catalogo.application.genre.create.CreateGenreUseCaseTest" time="0.002"/>
   <testcase name="givenAValidCommand_whenCallsCreateGenreAndSomeCategoriesDoesNotExists_shouldReturnDomainException()" classname="com.raderleao.admin.catalogo.application.genre.create.CreateGenreUseCaseTest" time="0.002"/>
-  <testcase name="givenAValidCommandWithInactiveGenre_whenCallsCreateGenre_shouldReturnGenreId()" classname="com.raderleao.admin.catalogo.application.genre.create.CreateGenreUseCaseTest" time="0.002"/>
+  <testcase name="givenAValidCommandWithInactiveGenre_whenCallsCreateGenre_shouldReturnGenreId()" classname="com.raderleao.admin.catalogo.application.genre.create.CreateGenreUseCaseTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
