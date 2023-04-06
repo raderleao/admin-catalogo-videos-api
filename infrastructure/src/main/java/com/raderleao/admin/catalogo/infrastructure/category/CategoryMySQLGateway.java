@@ -10,15 +10,18 @@ import com.raderleao.admin.catalogo.infrastructure.category.persistence.Category
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.jpa.domain.Specification;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
+import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.StreamSupport;
 
 import static com.raderleao.admin.catalogo.infrastructure.utils.SpecificationUtils.like;
 import static org.springframework.data.domain.Sort.*;
 
-@Service
+@Component
 public class CategoryMySQLGateway implements CategoryGateway {
 
     private final CategoryRepository repository;
@@ -78,9 +81,13 @@ public class CategoryMySQLGateway implements CategoryGateway {
     }
 
     @Override
-    public List<CategoryID> existsByIds(final Iterable<CategoryID> ids) {
-        // TODO: Implementar quando chegar na camada de infraestrutura de Genre
-        return null;
+    public List<CategoryID> existsByIds(final Iterable<CategoryID> categorysIDs) {
+        final var ids = StreamSupport.stream(categorysIDs.spliterator(), false)
+                .map(CategoryID::getValue)
+                .toList();
+        return this.repository.existsByIds(ids).stream()
+                .map(CategoryID::from)
+                .toList();
     }
 
     private Category save(final Category aCategory) {

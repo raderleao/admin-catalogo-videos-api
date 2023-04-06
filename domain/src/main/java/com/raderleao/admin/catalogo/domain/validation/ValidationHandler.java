@@ -17,10 +17,12 @@ public interface ValidationHandler {
         return getErrors() != null && !getErrors().isEmpty();
     }
 
-    default Optional<Error> firtError() {
-        return getErrors() != null && !getErrors().isEmpty()
-                ? Optional.of(getErrors().get(0))
-                : Optional.empty();
+    default Error firstError() {
+        if (getErrors() != null && !getErrors().isEmpty()) {
+            return getErrors().get(0);
+        } else {
+            return null;
+        }
     }
 
     interface Validation<T> {

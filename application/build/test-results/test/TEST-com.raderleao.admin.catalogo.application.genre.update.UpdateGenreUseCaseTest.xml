@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.raderleao.admin.catalogo.application.genre.update.UpdateGenreUseCaseTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2023-04-03T01:05:10" hostname="RaderLeao-MacBook-Air.local" time="0.012">
+<testsuite name="com.raderleao.admin.catalogo.application.genre.update.UpdateGenreUseCaseTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2023-04-06T16:50:54" hostname="RaderLeao-MacBook-Air.local" time="0.009">
   <properties/>
   <testcase name="givenAValidCommandWithInactiveGenre_whenCallsUpdateGenre_shouldReturnGenreId()" classname="com.raderleao.admin.catalogo.application.genre.update.UpdateGenreUseCaseTest" time="0.003"/>
   <testcase name="givenAValidCommanWithCategories_whenCallsUpdateGenre_shouldReturnGenreId()" classname="com.raderleao.admin.catalogo.application.genre.update.UpdateGenreUseCaseTest" time="0.002"/>
   <testcase name="givenAValidCommand_whenCallsUpdateGenre_shouldReturnGenreId()" classname="com.raderleao.admin.catalogo.application.genre.update.UpdateGenreUseCaseTest" time="0.001"/>
-  <testcase name="givenAnInvalidName_whenCallsUpdateGenreAndSomeCategoriesDoesNotExists_shouldReturnNotificationException()" classname="com.raderleao.admin.catalogo.application.genre.update.UpdateGenreUseCaseTest" time="0.002"/>
-  <testcase name="givenAnInvalidName_whenCallsUpdateGenre_shouldReturnNotificationException()" classname="com.raderleao.admin.catalogo.application.genre.update.UpdateGenreUseCaseTest" time="0.002"/>
+  <testcase name="givenAnInvalidName_whenCallsUpdateGenreAndSomeCategoriesDoesNotExists_shouldReturnNotificationException()" classname="com.raderleao.admin.catalogo.application.genre.update.UpdateGenreUseCaseTest" time="0.001"/>
+  <testcase name="givenAnInvalidName_whenCallsUpdateGenre_shouldReturnNotificationException()" classname="com.raderleao.admin.catalogo.application.genre.update.UpdateGenreUseCaseTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
