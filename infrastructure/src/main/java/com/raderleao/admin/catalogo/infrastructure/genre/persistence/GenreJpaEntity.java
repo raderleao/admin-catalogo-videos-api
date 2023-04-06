@@ -4,23 +4,24 @@ import com.raderleao.admin.catalogo.domain.category.CategoryID;
 import com.raderleao.admin.catalogo.domain.genre.Genre;
 import com.raderleao.admin.catalogo.domain.genre.GenreID;
 
-import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
+import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import java.time.Instant;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
-import static javax.persistence.CascadeType.*;
-import static javax.persistence.FetchType.*;
+import static javax.persistence.CascadeType.ALL;
+import static javax.persistence.FetchType.EAGER;
 
-@Entity
+@Entity(name = "Genre")
 @Table(name = "genres")
 public class GenreJpaEntity {
 
+    @Id
     @Column(name = "id", nullable = false)
     private String id;
 
@@ -37,9 +38,9 @@ public class GenreJpaEntity {
     private Instant createdAt;
 
     @Column(name = "updated_at", nullable = false, columnDefinition = "DATETIME(6)")
-    private Instant updateAt;
+    private Instant updatedAt;
 
-    @Column(name = "deleted_at", nullable = false, columnDefinition = "DATETIME(6)")
+    @Column(name = "deleted_at", columnDefinition = "DATETIME(6)")
     private Instant deletedAt;
 
     public GenreJpaEntity() {}
@@ -57,7 +58,7 @@ public class GenreJpaEntity {
         this.active = isActive;
         this.categories = new HashSet<>();
         this.createdAt = createdAt;
-        this.updateAt = updatedAt;
+        this.updatedAt = updatedAt;
         this.deletedAt = deletedAt;
     }
 
@@ -80,11 +81,9 @@ public class GenreJpaEntity {
                 GenreID.from(getId()),
                 getName(),
                 isActive(),
-                getCategories().stream()
-                        .map(it -> CategoryID.from(it.getId().getCategoryId()))
-                        .toList(),
+                getCategoryIDs(),
                 getCreatedAt(),
-                getUpdateAt(),
+                getUpdatedAt(),
                 getDeletedAt()
         );
     }
@@ -121,6 +120,12 @@ public class GenreJpaEntity {
         this.active = active;
     }
 
+    public List<CategoryID> getCategoryIDs() {
+        return getCategories().stream()
+                .map(it -> CategoryID.from(it.getId().getCategoryId()))
+                .toList();
+    }
+
     public Set<GenreCategoryJpaEntity> getCategories() {
         return categories;
     }
@@ -137,12 +142,12 @@ public class GenreJpaEntity {
         this.createdAt = createdAt;
     }
 
-    public Instant getUpdateAt() {
-        return updateAt;
+    public Instant getUpdatedAt() {
+        return updatedAt;
     }
 
-    public void setUpdateAt(Instant updateAt) {
-        this.updateAt = updateAt;
+    public void setUpdatedAt(Instant updateAt) {
+        this.updatedAt = updateAt;
     }
 
     public Instant getDeletedAt() {

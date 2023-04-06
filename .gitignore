@@ -6,7 +6,10 @@ build/
 !**/src/test/**/build/
 .env
 .env.local
-
+.DS_Store
+application/build/
+domain/build/
+infrastructure/build/
 ### STS ###
 .apt_generated
 .classpath
