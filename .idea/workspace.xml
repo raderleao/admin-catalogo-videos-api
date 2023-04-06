@@ -5,7 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="520d2c9a-ac28-4f30-85f3-da225c95735b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/build/classes/java/main/com/raderleao/admin/catalogo/infrastructure/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/build/classes/java/main/com/raderleao/admin/catalogo/infrastructure/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/build/classes/java/main/com/raderleao/admin/catalogo/infrastructure/api/CategoryAPI.class" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/build/classes/java/main/com/raderleao/admin/catalogo/infrastructure/api/CategoryAPI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/build/classes/java/main/com/raderleao/admin/catalogo/infrastructure/api/controllers/CategoryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/build/classes/java/main/com/raderleao/admin/catalogo/infrastructure/api/controllers/CategoryController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/build/classes/java/main/com/raderleao/admin/catalogo/infrastructure/api/controllers/GlobalExceptionHandler$ApiError.class" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/build/classes/java/main/com/raderleao/admin/catalogo/infrastructure/api/controllers/GlobalExceptionHandler$ApiError.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/build/classes/java/main/com/raderleao/admin/catalogo/infrastructure/api/controllers/GlobalExceptionHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/build/classes/java/main/com/raderleao/admin/catalogo/infrastructure/api/controllers/GlobalExceptionHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/build/classes/java/main/com/raderleao/admin/catalogo/infrastructure/category/CategoryMySQLGateway.class" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/build/classes/java/main/com/raderleao/admin/catalogo/infrastructure/category/CategoryMySQLGateway.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/build/classes/java/main/com/raderleao/admin/catalogo/infrastructure/category/models/CategoryListResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/build/classes/java/main/com/raderleao/admin/catalogo/infrastructure/category/models/CategoryListResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/build/classes/java/main/com/raderleao/admin/catalogo/infrastructure/category/models/CategoryResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/build/classes/java/main/com/raderleao/admin/catalogo/infrastructure/category/models/CategoryResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/build/classes/java/main/com/raderleao/admin/catalogo/infrastructure/category/models/CreateCategoryRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/build/classes/java/main/com/raderleao/admin/catalogo/infrastructure/category/models/CreateCategoryRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/build/classes/java/main/com/raderleao/admin/catalogo/infrastructure/category/models/UpdateCategoryRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/build/classes/java/main/com/raderleao/admin/catalogo/infrastructure/category/models/UpdateCategoryRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/build/classes/java/main/com/raderleao/admin/catalogo/infrastructure/category/persistence/CategoryJpaEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/build/classes/java/main/com/raderleao/admin/catalogo/infrastructure/category/persistence/CategoryJpaEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/build/classes/java/main/com/raderleao/admin/catalogo/infrastructure/category/persistence/CategoryRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/build/classes/java/main/com/raderleao/admin/catalogo/infrastructure/category/persistence/CategoryRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/build/classes/java/main/com/raderleao/admin/catalogo/infrastructure/category/presenters/CategoryApiPresenter.class" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/build/classes/java/main/com/raderleao/admin/catalogo/infrastructure/category/presenters/CategoryApiPresenter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/build/classes/java/main/com/raderleao/admin/catalogo/infrastructure/configuration/json/Json.class" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/build/classes/java/main/com/raderleao/admin/catalogo/infrastructure/configuration/json/Json.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/build/classes/java/main/com/raderleao/admin/catalogo/infrastructure/configuration/usecases/CategoryUseCaseConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/build/classes/java/main/com/raderleao/admin/catalogo/infrastructure/configuration/usecases/CategoryUseCaseConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/build/classes/java/main/com/raderleao/admin/catalogo/infrastructure/genre/GenreMySQLGateway.class" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/build/classes/java/main/com/raderleao/admin/catalogo/infrastructure/genre/GenreMySQLGateway.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/build/classes/java/main/com/raderleao/admin/catalogo/infrastructure/genre/persistence/GenreCategoryID.class" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/build/classes/java/main/com/raderleao/admin/catalogo/infrastructure/genre/persistence/GenreCategoryID.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/build/classes/java/main/com/raderleao/admin/catalogo/infrastructure/genre/persistence/GenreCategoryJpaEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/build/classes/java/main/com/raderleao/admin/catalogo/infrastructure/genre/persistence/GenreCategoryJpaEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/build/classes/java/main/com/raderleao/admin/catalogo/infrastructure/genre/persistence/GenreJpaEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/build/classes/java/main/com/raderleao/admin/catalogo/infrastructure/genre/persistence/GenreJpaEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/build/classes/java/main/com/raderleao/admin/catalogo/infrastructure/genre/persistence/GenreRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/build/classes/java/main/com/raderleao/admin/catalogo/infrastructure/genre/persistence/GenreRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/build/classes/java/main/com/raderleao/admin/catalogo/infrastructure/utils/SpecificationUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/build/classes/java/main/com/raderleao/admin/catalogo/infrastructure/utils/SpecificationUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/build/classes/java/main/com/raderleao/admin/catalogo/infrastructure/utils/SqlUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/build/classes/java/main/com/raderleao/admin/catalogo/infrastructure/utils/SqlUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/build/classes/java/test/com/raderleao/admin/catalogo/MySQLCleanUpExtension.class" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/build/classes/java/test/com/raderleao/admin/catalogo/MySQLCleanUpExtension.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/build/classes/java/test/com/raderleao/admin/catalogo/e2e/category/CategoryE2ETest.class" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/build/classes/java/test/com/raderleao/admin/catalogo/e2e/category/CategoryE2ETest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,39 +137,39 @@
     <option name="showLibraryContents" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelOrder2": "2",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RequestMappingsPanelWidth2": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "/Users/raderleao/src/dev/Workspace/admin-do-catalogo/infrastructure/src/main/resources/db/migration",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.sourceCode.Java",
-    "settings.editor.splitter.proportion": "0.26485148",
-    "spring.configuration.checksum": "c2450deb508acfabe90ccff7dc0cc52d",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelOrder2&quot;: &quot;2&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth2&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/raderleao/src/dev/Workspace/admin-do-catalogo/infrastructure/src/main/resources/db/migration&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.Java&quot;,
+    &quot;settings.editor.splitter.proportion&quot;: &quot;0.26485148&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;c2450deb508acfabe90ccff7dc0cc52d&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "h2"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;h2&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/infrastructure/src/main/resources/db/migration" />

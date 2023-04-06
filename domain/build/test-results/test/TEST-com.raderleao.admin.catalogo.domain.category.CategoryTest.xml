@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.raderleao.admin.catalogo.domain.category.CategoryTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2023-04-06T16:50:55" hostname="RaderLeao-MacBook-Air.local" time="0.021">
+<testsuite name="com.raderleao.admin.catalogo.domain.category.CategoryTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2023-04-06T17:31:33" hostname="RaderLeao-MacBook-Air.local" time="0.025">
   <properties/>
-  <testcase name="givenAValidInactiveCategory_whenCallActivate_thenReturnCategoryActivated()" classname="com.raderleao.admin.catalogo.domain.category.CategoryTest" time="0.01"/>
-  <testcase name="givenAValidCategory_whenCallUpdate_thenReturnCategoryUpdated()" classname="com.raderleao.admin.catalogo.domain.category.CategoryTest" time="0.001"/>
+  <testcase name="givenAValidInactiveCategory_whenCallActivate_thenReturnCategoryActivated()" classname="com.raderleao.admin.catalogo.domain.category.CategoryTest" time="0.013"/>
+  <testcase name="givenAValidCategory_whenCallUpdate_thenReturnCategoryUpdated()" classname="com.raderleao.admin.catalogo.domain.category.CategoryTest" time="0.0"/>
   <testcase name="givenAnInvalidEmptyName_whenCallNewCategoryAndValidate_thenShouldReceiveError()" classname="com.raderleao.admin.catalogo.domain.category.CategoryTest" time="0.001"/>
   <testcase name="givenAnInvalidNameLengthMoreThan255_whenCallNewCategoryAndValidate_thenShouldReceiveError()" classname="com.raderleao.admin.catalogo.domain.category.CategoryTest" time="0.001"/>
   <testcase name="givenAValidFalseIsActive_whenCallNewCategoryAndValidate_thenShouldReceiveOK()" classname="com.raderleao.admin.catalogo.domain.category.CategoryTest" time="0.001"/>

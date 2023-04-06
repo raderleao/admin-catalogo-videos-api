@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.raderleao.admin.catalogo.application.category.retrieve.list.ListCategoriesUseCaseTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-04-06T16:50:54" hostname="RaderLeao-MacBook-Air.local" time="0.017">
+<testsuite name="com.raderleao.admin.catalogo.application.category.retrieve.list.ListCategoriesUseCaseTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-04-06T17:31:32" hostname="RaderLeao-MacBook-Air.local" time="0.019">
   <properties/>
-  <testcase name="givenAValidQuery_whenCallsListCategories_thenShouldReturnCategories()" classname="com.raderleao.admin.catalogo.application.category.retrieve.list.ListCategoriesUseCaseTest" time="0.012"/>
+  <testcase name="givenAValidQuery_whenCallsListCategories_thenShouldReturnCategories()" classname="com.raderleao.admin.catalogo.application.category.retrieve.list.ListCategoriesUseCaseTest" time="0.014"/>
   <testcase name="givenAValidQuery_whenHasNoResults_thenShouldEmpityCategories()" classname="com.raderleao.admin.catalogo.application.category.retrieve.list.ListCategoriesUseCaseTest" time="0.002"/>
-  <testcase name="givenAValidQuery_whenGatewayThowsException_shouldReturnException()" classname="com.raderleao.admin.catalogo.application.category.retrieve.list.ListCategoriesUseCaseTest" time="0.002"/>
+  <testcase name="givenAValidQuery_whenGatewayThowsException_shouldReturnException()" classname="com.raderleao.admin.catalogo.application.category.retrieve.list.ListCategoriesUseCaseTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
