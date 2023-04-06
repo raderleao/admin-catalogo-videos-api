@@ -1,6 +1,5 @@
 package com.raderleao.admin.catalogo.infrastructure.genre;
 
-import com.raderleao.admin.catalogo.domain.category.CategoryID;
 import com.raderleao.admin.catalogo.domain.genre.Genre;
 import com.raderleao.admin.catalogo.domain.genre.GenreGateway;
 import com.raderleao.admin.catalogo.domain.genre.GenreID;
