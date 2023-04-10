@@ -2,12 +2,19 @@ package com.raderleao.admin.catalogo.infrastructure.api.controllers;
 
 import com.raderleao.admin.catalogo.application.genre.create.CreateGenreCommand;
 import com.raderleao.admin.catalogo.application.genre.create.CreateGenreUseCase;
+import com.raderleao.admin.catalogo.application.genre.delete.DeleteGenreUseCase;
+import com.raderleao.admin.catalogo.application.genre.retrieve.get.GetGenreByIdUseCase;
+import com.raderleao.admin.catalogo.application.genre.retrieve.list.ListGenreUseCase;
+import com.raderleao.admin.catalogo.application.genre.update.UpdateGenreCommand;
+import com.raderleao.admin.catalogo.application.genre.update.UpdateGenreUseCase;
 import com.raderleao.admin.catalogo.domain.pagination.Pagination;
+import com.raderleao.admin.catalogo.domain.pagination.SearchQuery;
 import com.raderleao.admin.catalogo.infrastructure.api.GenreAPI;
 import com.raderleao.admin.catalogo.infrastructure.genre.models.CreateGenreRequest;
 import com.raderleao.admin.catalogo.infrastructure.genre.models.GenreListResponse;
 import com.raderleao.admin.catalogo.infrastructure.genre.models.GenreResponse;
 import com.raderleao.admin.catalogo.infrastructure.genre.models.UpdateGenreRequest;
+import com.raderleao.admin.catalogo.infrastructure.genre.presenters.GenreApiPresenter;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -17,9 +24,23 @@ import java.net.URI;
 public class GenreController implements GenreAPI {
 
     private final CreateGenreUseCase createGenreUseCase;
+    private final DeleteGenreUseCase deleteGenreUseCase;
+    private final GetGenreByIdUseCase getGenreByIdUseCase;
+    private final ListGenreUseCase listGenreUseCase;
+    private final UpdateGenreUseCase updateGenreUseCase;
 
-    public GenreController(final CreateGenreUseCase createGenreUseCase) {
+    public GenreController(
+            final CreateGenreUseCase createGenreUseCase,
+            final DeleteGenreUseCase deleteGenreUseCase,
+            final GetGenreByIdUseCase getGenreByIdUseCase,
+            final ListGenreUseCase listGenreUseCase,
+            final UpdateGenreUseCase updateGenreUseCase
+    ) {
         this.createGenreUseCase = createGenreUseCase;
+        this.deleteGenreUseCase = deleteGenreUseCase;
+        this.getGenreByIdUseCase = getGenreByIdUseCase;
+        this.listGenreUseCase = listGenreUseCase;
+        this.updateGenreUseCase = updateGenreUseCase;
     }
 
     @Override
@@ -43,21 +64,32 @@ public class GenreController implements GenreAPI {
             final String sort,
             final String direction
     ){
-        return null;
+        return this.listGenreUseCase.execute(new SearchQuery(page, perPage,search, sort, direction))
+                .map(GenreApiPresenter::present);
     }
 
     @Override
     public GenreResponse getById(final String id) {
-        return null;
+        return GenreApiPresenter.present(this.getGenreByIdUseCase.execute(id));
     }
 
     @Override
     public ResponseEntity<?> updateById(final String id, final UpdateGenreRequest input) {
-        return null;
+
+        final var aCommand = UpdateGenreCommand.with(
+                id,
+                input.name(),
+                input.isActive(),
+                input.categories()
+        );
+
+        final var output = this.updateGenreUseCase.execute(aCommand);
+
+        return ResponseEntity.ok(output);
     }
 
     @Override
     public void deleteById(final String id) {
-
+        this.deleteGenreUseCase.execute(id);
     }
 }

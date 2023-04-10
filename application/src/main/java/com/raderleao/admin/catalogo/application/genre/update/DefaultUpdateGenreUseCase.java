@@ -35,7 +35,7 @@ public class DefaultUpdateGenreUseCase extends UpdateGenreUseCase {
     @Override
     public UpdateGenreOutput execute(final UpdateGenreCommand aCommand) {
         final var anId = GenreID.from(aCommand.id());
-        final var aName = aCommand.nome();
+        final var aName = aCommand.name();
         final var isActive = aCommand.isActive();
         final var categories = toCategoryId(aCommand.categories());
 

@@ -4,7 +4,7 @@ import java.util.List;
 
 public record UpdateGenreCommand(
         String id,
-        String nome,
+        String name,
         boolean isActive,
         List<String> categories
 ) {
