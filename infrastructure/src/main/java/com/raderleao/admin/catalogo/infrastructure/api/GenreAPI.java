@@ -1,6 +1,5 @@
 package com.raderleao.admin.catalogo.infrastructure.api;
 
-import com.raderleao.admin.catalogo.application.genre.retrieve.list.GenreListOutput;
 import com.raderleao.admin.catalogo.domain.pagination.Pagination;
 import com.raderleao.admin.catalogo.infrastructure.genre.models.CreateGenreRequest;
 import com.raderleao.admin.catalogo.infrastructure.genre.models.GenreListResponse;
