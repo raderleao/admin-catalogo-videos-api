@@ -8,6 +8,8 @@ import com.raderleao.admin.catalogo.infrastructure.category.models.CreateCategor
 import com.raderleao.admin.catalogo.infrastructure.category.models.UpdateCategoryRequest;
 import com.raderleao.admin.catalogo.infrastructure.configuration.json.Json;
 import com.raderleao.admin.catalogo.infrastructure.genre.models.CreateGenreRequest;
+import com.raderleao.admin.catalogo.infrastructure.genre.models.GenreResponse;
+import com.raderleao.admin.catalogo.infrastructure.genre.models.UpdateGenreRequest;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.ResultActions;
@@ -57,10 +59,38 @@ public interface MockDsl {
         return this.update("/categories/", anId, aRequest);
     }
 
+    /**
+     * Genre
+     */
+
+    default ResultActions deleteAGenre(final GenreID anId) throws Exception {
+        return this.delete("/genres/", anId);
+    }
+
     default GenreID givenAGenre(final String aName, final boolean isActive, final List<CategoryID> categories) throws Exception {
         final var aRequestBody = new CreateGenreRequest(aName, mapTo(categories, CategoryID::getValue), isActive);
         final var actualId = this.given("/genres", aRequestBody);
         return GenreID.from(actualId);
+    }
+
+    default ResultActions listGenres(final int page, final int perPage) throws Exception {
+        return listGenres(page, perPage, "", "", "");
+    }
+
+    default ResultActions listGenres(final int page, final int perPage, final String search) throws Exception {
+        return listGenres(page, perPage, search, "", "");
+    }
+
+    default ResultActions listGenres(final int page, final int perPage, final String search, final String sort, final String direction) throws Exception {
+        return this.list("/genres", page, perPage, search, sort, direction);
+    }
+
+    default GenreResponse retrieveAGenre(final GenreID anId) throws Exception {
+        return this.retrieve("/genres/", anId, GenreResponse.class);
+    }
+
+    default ResultActions updateAGenre(final GenreID anId, final UpdateGenreRequest aRequest) throws Exception {
+        return this.update("/genres/", anId, aRequest);
     }
 
     default  <A, D> List<D> mapTo(final List<A> actual, final Function<A, D> mapper) {

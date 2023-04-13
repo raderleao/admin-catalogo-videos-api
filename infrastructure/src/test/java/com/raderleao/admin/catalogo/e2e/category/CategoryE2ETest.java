@@ -1,6 +1,8 @@
 package com.raderleao.admin.catalogo.e2e.category;
 
 import com.raderleao.admin.catalogo.E2ETest;
+import com.raderleao.admin.catalogo.domain.category.CategoryID;
+import com.raderleao.admin.catalogo.domain.genre.GenreID;
 import com.raderleao.admin.catalogo.e2e.MockDsl;
 import com.raderleao.admin.catalogo.infrastructure.category.models.UpdateCategoryRequest;
 import com.raderleao.admin.catalogo.infrastructure.category.persistence.CategoryRepository;
@@ -128,7 +130,7 @@ public class CategoryE2ETest implements MockDsl {
     }
 
     @Test
-    public void asACatalogAdminIShouldBeAbleToSortAllCategoriesByDescriptionDes() throws Exception {
+    public void asACatalogAdminIShouldBeAbleToSortAllCategoriesByDescriptionDesc() throws Exception {
         Assertions.assertTrue(MY_SQL_CONTAINER.isRunning());
         Assertions.assertEquals(0, categoryRepository.count());
 
@@ -169,7 +171,7 @@ public class CategoryE2ETest implements MockDsl {
     }
 
     @Test
-    public void asACatalogAdminIShouldBeAbleToSeeATreatedErrorByGettingAnotFoundCategory() throws Exception {
+    public void asACatalogAdminIShouldBeAbleToSeeATreatedErrorByGettingANotFoundCategory() throws Exception {
         Assertions.assertTrue(MY_SQL_CONTAINER.isRunning());
         Assertions.assertEquals(0, categoryRepository.count());
 
@@ -273,5 +275,16 @@ public class CategoryE2ETest implements MockDsl {
                .andExpect(status().isNoContent());
 
        Assertions.assertFalse(this.categoryRepository.existsById(actualId.getValue()));
+    }
+
+    @Test
+    public void asACatalogAdminIShouldNotSeeAnErrorByDeletingANotExistentCategory() throws Exception {
+        Assertions.assertTrue(MY_SQL_CONTAINER.isRunning());
+        Assertions.assertEquals(0, categoryRepository.count());
+
+        deleteACategory(CategoryID.from("12313"))
+                .andExpect(status().isNoContent());
+
+        Assertions.assertEquals(0, categoryRepository.count());
     }
 }
