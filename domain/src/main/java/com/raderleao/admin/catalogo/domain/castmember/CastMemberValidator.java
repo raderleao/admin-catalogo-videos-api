@@ -1,27 +1,29 @@
-package com.raderleao.admin.catalogo.domain.category;
+package com.raderleao.admin.catalogo.domain.castmember;
 
 import com.raderleao.admin.catalogo.domain.validation.Error;
 import com.raderleao.admin.catalogo.domain.validation.ValidationHandler;
 import com.raderleao.admin.catalogo.domain.validation.Validator;
 
-public class CategoryValidator extends Validator {
+public class CastMemberValidator extends Validator {
 
-    public static final int NAME_MAX_LENGTH = 255;
-    public static final int NAME_MIN_LENGTH = 3;
-    private final Category category;
+    private static final int NAME_MAX_LENGTH = 255;
+    private static final int NAME_MIN_LENGTH = 3;
 
-    public CategoryValidator(final Category aCategory, final ValidationHandler aHandler) {
+    private final CastMember castMember;
+
+    public CastMemberValidator(final CastMember aMember, ValidationHandler aHandler) {
         super(aHandler);
-        this.category = aCategory;
+        this.castMember = aMember;
     }
 
     @Override
     public void validate() {
         checkNameConstraints();
+        checkTypeConstraints();
     }
 
     private void checkNameConstraints() {
-        final var name = this.category.getName();
+        final var name = this.castMember.getName();
         if (name == null) {
             this.validationHandler().append(new Error("'name' should not be null"));
             return;
@@ -35,6 +37,13 @@ public class CategoryValidator extends Validator {
         final int length = name.strip().length();
         if (length > NAME_MAX_LENGTH || length < NAME_MIN_LENGTH) {
             this.validationHandler().append(new Error("'name' must be between 3 and 255 characters"));
+        }
+    }
+
+    private void checkTypeConstraints() {
+        final var type = this.castMember.getType();
+        if (type == null) {
+            this.validationHandler().append(new Error("'type' should not be null"));
         }
     }
 }
