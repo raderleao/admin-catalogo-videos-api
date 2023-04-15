@@ -1,5 +1,6 @@
 package com.raderleao.admin.catalogo;
 
+import com.raderleao.admin.catalogo.infrastructure.castmember.persistence.CastMemberRepository;
 import com.raderleao.admin.catalogo.infrastructure.category.persistence.CategoryRepository;
 import com.raderleao.admin.catalogo.infrastructure.genre.persistence.GenreRepository;
 import org.junit.jupiter.api.extension.BeforeEachCallback;
@@ -18,6 +19,7 @@ public class MySQLCleanUpExtension implements BeforeEachCallback {
         final var appContext = SpringExtension.getApplicationContext(context);
 
         cleanUp(List.of(
+                appContext.getBean(CastMemberRepository.class),
                 appContext.getBean(GenreRepository.class),
                 appContext.getBean(CategoryRepository.class)
 
