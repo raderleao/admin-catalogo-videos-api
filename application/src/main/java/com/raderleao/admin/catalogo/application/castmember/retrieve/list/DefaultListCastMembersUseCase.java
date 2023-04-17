@@ -6,11 +6,11 @@ import com.raderleao.admin.catalogo.domain.pagination.SearchQuery;
 
 import java.util.Objects;
 
-public final class DefaultListCastMemberUseCase extends ListCastMemberUseCase {
+public non-sealed class DefaultListCastMembersUseCase extends ListCastMembersUseCase {
 
     private final CastMemberGateway castMemberGateway;
 
-    public DefaultListCastMemberUseCase(CastMemberGateway castMemberGateway) {
+    public DefaultListCastMembersUseCase(CastMemberGateway castMemberGateway) {
         this.castMemberGateway = Objects.requireNonNull(castMemberGateway);
     }
 
