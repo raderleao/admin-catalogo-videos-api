@@ -6,8 +6,8 @@ import com.raderleao.admin.catalogo.application.castmember.delete.DefaultDeleteC
 import com.raderleao.admin.catalogo.application.castmember.delete.DeleteCastMemberUseCase;
 import com.raderleao.admin.catalogo.application.castmember.retrieve.get.DefaultGetCastMemberByIdUseCase;
 import com.raderleao.admin.catalogo.application.castmember.retrieve.get.GetCastMemberByIdUseCase;
-import com.raderleao.admin.catalogo.application.castmember.retrieve.list.DefaultListCastMemberUseCase;
-import com.raderleao.admin.catalogo.application.castmember.retrieve.list.ListCastMemberUseCase;
+import com.raderleao.admin.catalogo.application.castmember.retrieve.list.DefaultListCastMembersUseCase;
+import com.raderleao.admin.catalogo.application.castmember.retrieve.list.ListCastMembersUseCase;
 import com.raderleao.admin.catalogo.application.castmember.update.DefaultUpdateCastMemberUseCase;
 import com.raderleao.admin.catalogo.application.castmember.update.UpdateCastMemberUseCase;
 import com.raderleao.admin.catalogo.domain.castmember.CastMemberGateway;
@@ -41,8 +41,8 @@ public class CastMemberUseCaseConfig {
     }
 
     @Bean
-    public ListCastMemberUseCase listCastMemberUseCase(){
-        return new DefaultListCastMemberUseCase(castMemberGateway);
+    public ListCastMembersUseCase listCastMemberUseCase(){
+        return new DefaultListCastMembersUseCase(castMemberGateway);
     }
 
     @Bean
