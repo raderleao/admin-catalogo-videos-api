@@ -80,7 +80,7 @@ public class CastMemberMySQLGateway implements CastMemberGateway {
 
     @Override
     public List<CastMemberID> existsByIds(final Iterable<CastMemberID> ids) {
-        return null;
+        throw new UnsupportedOperationException();
     }
 
     private CastMember save(CastMember aCastMember) {

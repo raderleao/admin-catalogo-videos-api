@@ -1,5 +1,6 @@
 package com.raderleao.admin.catalogo.application;
 
+import com.raderleao.admin.catalogo.domain.Identifier;
 import org.junit.jupiter.api.extension.BeforeEachCallback;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.junit.jupiter.api.extension.ExtensionContext;
@@ -7,6 +8,8 @@ import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
 
 import java.util.List;
+import java.util.Set;
+import java.util.stream.Collectors;
 
 @ExtendWith(MockitoExtension.class)
 public abstract class UseCaseTest implements BeforeEachCallback {
@@ -16,4 +19,16 @@ public abstract class UseCaseTest implements BeforeEachCallback {
         Mockito.reset(getMocks().toArray());
     }
     protected abstract List<Object> getMocks();
+
+    protected Set<String> asString(final Set<? extends Identifier> ids) {
+        return ids.stream()
+                .map(Identifier::getValue)
+                .collect(Collectors.toSet());
+    }
+
+    protected List<String> asString(final List<? extends Identifier> ids) {
+        return ids.stream()
+                .map(Identifier::getValue)
+                .toList();
+    }
 }
