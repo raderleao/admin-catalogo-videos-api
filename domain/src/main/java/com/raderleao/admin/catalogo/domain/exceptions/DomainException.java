@@ -6,6 +6,7 @@ import java.util.List;
 
 public class DomainException extends NoStacktraceException {
 
+
     protected final List<Error> errors;
 
     protected DomainException(final String aMessage, final List<Error> anErrors) {
@@ -20,7 +21,6 @@ public class DomainException extends NoStacktraceException {
     public static DomainException with(final List<Error> anErrors) {
         return new DomainException("", anErrors);
     }
-
 
     public List<Error> getErrors() {
         return errors;
