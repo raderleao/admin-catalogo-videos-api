@@ -1,8 +1,13 @@
 package com.raderleao.admin.catalogo.e2e;
 
 import com.raderleao.admin.catalogo.domain.Identifier;
+import com.raderleao.admin.catalogo.domain.castmember.CastMemberID;
+import com.raderleao.admin.catalogo.domain.castmember.CastMemberType;
 import com.raderleao.admin.catalogo.domain.category.CategoryID;
 import com.raderleao.admin.catalogo.domain.genre.GenreID;
+import com.raderleao.admin.catalogo.infrastructure.castmember.models.CastMemberResponse;
+import com.raderleao.admin.catalogo.infrastructure.castmember.models.CreateCastMemberRequest;
+import com.raderleao.admin.catalogo.infrastructure.castmember.models.UpdateCastMemberRequest;
 import com.raderleao.admin.catalogo.infrastructure.category.models.CategoryResponse;
 import com.raderleao.admin.catalogo.infrastructure.category.models.CreateCategoryRequest;
 import com.raderleao.admin.catalogo.infrastructure.category.models.UpdateCategoryRequest;
@@ -24,11 +29,51 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 public interface MockDsl {
 
     MockMvc mvc();
+    /**
+     * Cast Member
+     */
+    default ResultActions deleteACastMember(final CastMemberID anId) throws Exception {
+        return this.delete("/cast_members/", anId);
+    }
+
+    default CastMemberID givenACastMember(final String aName, final CastMemberType aType) throws Exception {
+        final var aRequestBody = new CreateCastMemberRequest(aName, aType);
+        final var actualId = this.given("/cast_members", aRequestBody);
+        return CastMemberID.from(actualId);
+    }
+
+    default ResultActions givenACastMemberResult(final String aName, final CastMemberType aType) throws Exception {
+        final var aRequestBody = new CreateCastMemberRequest(aName, aType);
+        return this.givenResult("/cast_members", aRequestBody);
+    }
+
+    default ResultActions listCastMembers(final int page, final int perPage) throws Exception {
+        return listCastMembers(page, perPage, "", "", "");
+    }
+
+    default ResultActions listCastMembers(final int page, final int perPage, final String search) throws Exception {
+        return listCastMembers(page, perPage, search, "", "");
+    }
+
+    default ResultActions listCastMembers(final int page, final int perPage, final String search, final String sort, final String direction) throws Exception {
+        return this.list("/cast_members", page, perPage, search, sort, direction);
+    }
+
+    default CastMemberResponse retrieveACastMember(final CastMemberID anId) throws Exception {
+        return this.retrieve("/cast_members/", anId, CastMemberResponse.class);
+    }
+
+    default ResultActions retrieveACastMemberResult(final CastMemberID anId) throws Exception {
+        return this.retrieveResult("/cast_members/", anId);
+    }
+
+    default ResultActions updateACastMember(final CastMemberID anId, final String aName, final CastMemberType aType) throws Exception {
+        return this.update("/cast_members/", anId, new UpdateCastMemberRequest(aName, aType));
+    }
 
     /**
      * Category
      */
-
     default ResultActions deleteACategory(final CategoryID anId) throws Exception {
         return this.delete("/categories/", anId);
     }
@@ -62,7 +107,6 @@ public interface MockDsl {
     /**
      * Genre
      */
-
     default ResultActions deleteAGenre(final GenreID anId) throws Exception {
         return this.delete("/genres/", anId);
     }
@@ -100,7 +144,6 @@ public interface MockDsl {
     }
 
     private String given(final String url, final Object body) throws Exception {
-
         final var aRequest = post(url)
                 .contentType(MediaType.APPLICATION_JSON)
                 .content(Json.writeValueAsString(body));
@@ -112,6 +155,14 @@ public interface MockDsl {
                 .replace("%s/".formatted(url), "");
 
         return actualId;
+    }
+
+    private ResultActions givenResult(final String url, final Object body) throws Exception {
+        final var aRequest = post(url)
+                .contentType(MediaType.APPLICATION_JSON)
+                .content(Json.writeValueAsString(body));
+
+        return this.mvc().perform(aRequest);
     }
 
     private ResultActions list(final String url, final int page, final int perPage, final String search, final String sort, final String direction) throws Exception {
@@ -140,9 +191,17 @@ public interface MockDsl {
         return Json.readValue(json, clazz);
     }
 
+    private ResultActions retrieveResult(final String url, final Identifier anId) throws Exception {
+        final var aRequest = get(url + anId.getValue())
+                .accept(MediaType.APPLICATION_JSON_UTF8)
+                .contentType(MediaType.APPLICATION_JSON_UTF8);
+
+        return this.mvc().perform(aRequest);
+    }
+
     private ResultActions delete(final String url, final Identifier anId) throws Exception {
-       final var aRequest = MockMvcRequestBuilders.delete(url + anId.getValue())
-               .contentType(MediaType.APPLICATION_JSON);
+        final var aRequest = MockMvcRequestBuilders.delete(url + anId.getValue())
+                .contentType(MediaType.APPLICATION_JSON);
 
         return this.mvc().perform(aRequest);
     }
