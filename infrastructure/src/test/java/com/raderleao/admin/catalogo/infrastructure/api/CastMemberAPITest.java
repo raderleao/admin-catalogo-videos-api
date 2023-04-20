@@ -3,7 +3,7 @@ package com.raderleao.admin.catalogo.infrastructure.api;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.raderleao.admin.catalogo.ControllerTest;
 
-import com.raderleao.admin.catalogo.Fixture;
+import com.raderleao.admin.catalogo.domain.Fixture;
 import com.raderleao.admin.catalogo.application.castmember.create.CreateCastMemberOutput;
 import com.raderleao.admin.catalogo.application.castmember.create.DefaultCreateCastMemberUseCase;
 import com.raderleao.admin.catalogo.application.castmember.delete.DefaultDeleteCastMemberUseCase;

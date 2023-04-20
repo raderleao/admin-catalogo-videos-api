@@ -1,7 +1,7 @@
 package com.raderleao.admin.catalogo.application.video.update;
 
-import com.raderleao.admin.catalogo.application.Fixture;
 import com.raderleao.admin.catalogo.application.UseCaseTest;
+import com.raderleao.admin.catalogo.domain.Fixture;
 import com.raderleao.admin.catalogo.domain.castmember.CastMemberGateway;
 import com.raderleao.admin.catalogo.domain.castmember.CastMemberID;
 import com.raderleao.admin.catalogo.domain.category.CategoryGateway;

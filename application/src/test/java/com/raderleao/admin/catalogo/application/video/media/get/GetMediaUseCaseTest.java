@@ -1,7 +1,7 @@
 package com.raderleao.admin.catalogo.application.video.media.get;
 
-import com.raderleao.admin.catalogo.application.Fixture;
 import com.raderleao.admin.catalogo.application.UseCaseTest;
+import com.raderleao.admin.catalogo.domain.Fixture;
 import com.raderleao.admin.catalogo.domain.exceptions.NotFoundException;
 import com.raderleao.admin.catalogo.domain.video.MediaResourceGateway;
 import com.raderleao.admin.catalogo.domain.video.VideoID;

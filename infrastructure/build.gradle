@@ -46,8 +46,9 @@ dependencies {
 
     implementation 'com.fasterxml.jackson.module:jackson-module-afterburner:2.13.1'
 
-    testImplementation('com.github.javafaker:javafaker:1.0.2')
     implementation 'org.yaml:snakeyaml:1.29'
+
+    testImplementation(project(path: ':domain', configuration: 'testClasses'))
 
     testImplementation('org.flywaydb:flyway-core:')
     testImplementation('org.flywaydb:flyway-mysql')
