@@ -4,9 +4,12 @@ import com.raderleao.admin.catalogo.MySQLGatewayTest;
 import com.raderleao.admin.catalogo.domain.castmember.CastMember;
 import com.raderleao.admin.catalogo.domain.castmember.CastMemberID;
 import com.raderleao.admin.catalogo.domain.castmember.CastMemberType;
+import com.raderleao.admin.catalogo.domain.genre.Genre;
+import com.raderleao.admin.catalogo.domain.genre.GenreID;
 import com.raderleao.admin.catalogo.domain.pagination.SearchQuery;
 import com.raderleao.admin.catalogo.infrastructure.castmember.persistence.CastMemberJpaEntity;
 import com.raderleao.admin.catalogo.infrastructure.castmember.persistence.CastMemberRepository;
+import com.raderleao.admin.catalogo.infrastructure.genre.persistence.GenreJpaEntity;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -101,6 +104,26 @@ public class CastMemberMySQLGatewayTest {
         Assertions.assertEquals(aMember.getCreatedAt(), persistedMember.getCreatedAt());
         Assertions.assertTrue(aMember.getCreatedAt().isBefore(persistedMember.getUpdatedAt()) );
 
+    }
+
+    @Test
+    public void givenTwoCastMemberAndOnePersisted_whenCallsExistsByIds_shouldReturnPersistedID() {
+        // given
+        final var aMember = CastMember.newMember("vIN", CastMemberType.DIRECTOR);
+
+        final var expectedItems = 1;
+        final var expectedId = aMember.getId();
+
+        Assertions.assertEquals(0, castMemberRepository.count());
+
+        castMemberRepository.saveAndFlush(CastMemberJpaEntity.from(aMember));
+
+        // when
+        final var actualMember = castMemberGateway.existsByIds(List.of(CastMemberID.from("123"), expectedId));
+
+        // then
+        Assertions.assertEquals(expectedItems, actualMember.size());
+        Assertions.assertEquals(expectedId.getValue(), actualMember.get(0).getValue());
     }
 
     @Test

@@ -4,7 +4,6 @@ import com.raderleao.admin.catalogo.domain.Identifier;
 import com.raderleao.admin.catalogo.domain.utils.IdUtils;
 
 import java.util.Objects;
-import java.util.UUID;
 
 public class CategoryID extends Identifier {
 
@@ -15,7 +14,6 @@ public class CategoryID extends Identifier {
     }
 
     public static CategoryID unique() {
-
         return CategoryID.from(IdUtils.uuid());
     }
 
@@ -32,7 +30,7 @@ public class CategoryID extends Identifier {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        CategoryID that = (CategoryID) o;
+        final CategoryID that = (CategoryID) o;
         return getValue().equals(that.getValue());
     }
 

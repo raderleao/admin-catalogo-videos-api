@@ -71,4 +71,5 @@ flyway {
 
 test {
     useJUnitPlatform()
+    jvmArgs '-Xshare:off'
 }
