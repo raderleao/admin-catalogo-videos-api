@@ -1,7 +1,7 @@
 package com.raderleao.admin.catalogo.e2e.castmember;
 
 import com.raderleao.admin.catalogo.E2ETest;
-import com.raderleao.admin.catalogo.Fixture;
+import com.raderleao.admin.catalogo.domain.Fixture;
 import com.raderleao.admin.catalogo.domain.castmember.CastMemberID;
 import com.raderleao.admin.catalogo.domain.castmember.CastMemberType;
 import com.raderleao.admin.catalogo.e2e.MockDsl;

@@ -1,8 +1,8 @@
 package com.raderleao.admin.catalogo.application.video.retrieve.list;
 
-import com.raderleao.admin.catalogo.application.Fixture;
 import com.raderleao.admin.catalogo.application.UseCaseTest;
 import com.raderleao.admin.catalogo.application.genre.retrieve.list.GenreListOutput;
+import com.raderleao.admin.catalogo.domain.Fixture;
 import com.raderleao.admin.catalogo.domain.pagination.Pagination;
 import com.raderleao.admin.catalogo.domain.video.VideoGateway;
 import com.raderleao.admin.catalogo.domain.video.VideoPreview;

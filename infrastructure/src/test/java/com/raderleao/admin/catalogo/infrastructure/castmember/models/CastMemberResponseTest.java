@@ -1,6 +1,6 @@
 package com.raderleao.admin.catalogo.infrastructure.castmember.models;
 
-import com.raderleao.admin.catalogo.Fixture;
+import com.raderleao.admin.catalogo.domain.Fixture;
 
 import com.raderleao.admin.catalogo.JacksonTest;
 import org.assertj.core.api.Assertions;

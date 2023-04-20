@@ -1,6 +1,6 @@
 package com.raderleao.admin.catalogo.application.castmember.create;
 
-import com.raderleao.admin.catalogo.Fixture;
+import com.raderleao.admin.catalogo.domain.Fixture;
 import com.raderleao.admin.catalogo.IntegrationTest;
 import com.raderleao.admin.catalogo.domain.castmember.CastMemberGateway;
 import com.raderleao.admin.catalogo.domain.castmember.CastMemberType;

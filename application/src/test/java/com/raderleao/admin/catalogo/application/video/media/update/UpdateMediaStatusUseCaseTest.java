@@ -1,7 +1,7 @@
 package com.raderleao.admin.catalogo.application.video.media.update;
 
-import com.raderleao.admin.catalogo.application.Fixture;
 import com.raderleao.admin.catalogo.application.UseCaseTest;
+import com.raderleao.admin.catalogo.domain.Fixture;
 import com.raderleao.admin.catalogo.domain.video.MediaStatus;
 import com.raderleao.admin.catalogo.domain.video.Video;
 import com.raderleao.admin.catalogo.domain.video.VideoGateway;

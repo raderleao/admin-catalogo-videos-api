@@ -11,8 +11,8 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.mock.mockito.SpyBean;
 
-import static com.raderleao.admin.catalogo.Fixture.CastMembers.type;
-import static com.raderleao.admin.catalogo.Fixture.name;
+import static com.raderleao.admin.catalogo.domain.Fixture.CastMembers.type;
+import static com.raderleao.admin.catalogo.domain.Fixture.name;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.*;
 

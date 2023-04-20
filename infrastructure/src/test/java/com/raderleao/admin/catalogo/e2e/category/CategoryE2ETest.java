@@ -2,7 +2,6 @@ package com.raderleao.admin.catalogo.e2e.category;
 
 import com.raderleao.admin.catalogo.E2ETest;
 import com.raderleao.admin.catalogo.domain.category.CategoryID;
-import com.raderleao.admin.catalogo.domain.genre.GenreID;
 import com.raderleao.admin.catalogo.e2e.MockDsl;
 import com.raderleao.admin.catalogo.infrastructure.category.models.UpdateCategoryRequest;
 import com.raderleao.admin.catalogo.infrastructure.category.persistence.CategoryRepository;
