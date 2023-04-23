@@ -1,6 +1,6 @@
 package com.raderleao.admin.catalogo.application.video.media.get;
 
-import com.raderleao.admin.catalogo.domain.video.Resource;
+import com.raderleao.admin.catalogo.domain.resource.Resource;
 
 public record MediaOutput(
         byte[] content,

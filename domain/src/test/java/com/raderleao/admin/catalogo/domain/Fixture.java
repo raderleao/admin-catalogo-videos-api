@@ -5,6 +5,7 @@ import com.raderleao.admin.catalogo.domain.castmember.CastMember;
 import com.raderleao.admin.catalogo.domain.castmember.CastMemberType;
 import com.raderleao.admin.catalogo.domain.category.Category;
 import com.raderleao.admin.catalogo.domain.genre.Genre;
+import com.raderleao.admin.catalogo.domain.resource.Resource;
 import com.raderleao.admin.catalogo.domain.utils.IdUtils;
 import com.raderleao.admin.catalogo.domain.video.*;
 

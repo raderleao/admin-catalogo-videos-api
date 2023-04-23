@@ -10,6 +10,7 @@ import com.raderleao.admin.catalogo.domain.exceptions.InternalErrorException;
 import com.raderleao.admin.catalogo.domain.exceptions.NotificationException;
 import com.raderleao.admin.catalogo.domain.genre.GenreGateway;
 import com.raderleao.admin.catalogo.domain.genre.GenreID;
+import com.raderleao.admin.catalogo.domain.resource.Resource;
 import com.raderleao.admin.catalogo.domain.video.*;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;

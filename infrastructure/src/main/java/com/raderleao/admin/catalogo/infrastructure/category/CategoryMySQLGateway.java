@@ -24,10 +24,10 @@ import static org.springframework.data.domain.Sort.*;
 @Component
 public class CategoryMySQLGateway implements CategoryGateway {
 
-    private final CategoryRepository repository;
+    private final CategoryRepository categoryRepository;
 
     public CategoryMySQLGateway(final CategoryRepository repository) {
-        this.repository = repository;
+        this.categoryRepository = repository;
     }
 
     @Override
@@ -38,14 +38,14 @@ public class CategoryMySQLGateway implements CategoryGateway {
     @Override
     public void deleteById(final CategoryID anId) {
         final String anIdValue = anId.getValue();
-        if(this.repository.existsById(anIdValue)){
-            this.repository.deleteById(anIdValue);
+        if(this.categoryRepository.existsById(anIdValue)){
+            this.categoryRepository.deleteById(anIdValue);
         }
     }
 
     @Override
     public Optional<Category> findById(final CategoryID anId) {
-        return this.repository.findById(anId.getValue())
+        return this.categoryRepository.findById(anId.getValue())
                 .map(CategoryJpaEntity::toAggregate);
     }
 
@@ -70,7 +70,7 @@ public class CategoryMySQLGateway implements CategoryGateway {
                 .orElse(null);
 
         final var pageResult =
-                this.repository.findAll(Specification.where(specifications), page);
+                this.categoryRepository.findAll(Specification.where(specifications), page);
 
         return new Pagination<>(
                 pageResult.getNumber(),
@@ -85,13 +85,13 @@ public class CategoryMySQLGateway implements CategoryGateway {
         final var ids = StreamSupport.stream(categorysIDs.spliterator(), false)
                 .map(CategoryID::getValue)
                 .toList();
-        return this.repository.existsByIds(ids).stream()
+        return this.categoryRepository.existsByIds(ids).stream()
                 .map(CategoryID::from)
                 .toList();
     }
 
     private Category save(final Category aCategory) {
-        return this.repository.save(CategoryJpaEntity.from(aCategory)).toAggregate();
+        return this.categoryRepository.save(CategoryJpaEntity.from(aCategory)).toAggregate();
     }
 
     private Specification<CategoryJpaEntity> assembleSpecification(final String str) {

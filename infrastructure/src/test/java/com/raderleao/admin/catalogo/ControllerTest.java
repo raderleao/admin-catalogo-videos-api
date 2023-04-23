@@ -1,6 +1,6 @@
 package com.raderleao.admin.catalogo;
 
-import com.raderleao.admin.catalogo.infrastructure.configuration.usecases.ObjectMapperConfig;
+import com.raderleao.admin.catalogo.infrastructure.configuration.ObjectMapperConfig;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.context.annotation.Import;
 import org.springframework.core.annotation.AliasFor;

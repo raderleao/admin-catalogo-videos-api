@@ -1,4 +1,4 @@
-package com.raderleao.admin.catalogo.domain.video;
+package com.raderleao.admin.catalogo.domain.resource;
 
 import com.raderleao.admin.catalogo.domain.ValueObject;
 

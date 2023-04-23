@@ -3,6 +3,7 @@ package com.raderleao.admin.catalogo.infrastructure.castmember;
 import com.raderleao.admin.catalogo.domain.castmember.CastMember;
 import com.raderleao.admin.catalogo.domain.castmember.CastMemberGateway;
 import com.raderleao.admin.catalogo.domain.castmember.CastMemberID;
+import com.raderleao.admin.catalogo.domain.genre.GenreID;
 import com.raderleao.admin.catalogo.domain.pagination.Pagination;
 import com.raderleao.admin.catalogo.domain.pagination.SearchQuery;
 import com.raderleao.admin.catalogo.infrastructure.castmember.persistence.CastMemberJpaEntity;
@@ -16,6 +17,7 @@ import org.springframework.stereotype.Component;
 import java.util.List;
 import java.util.Objects;
 import java.util.Optional;
+import java.util.stream.StreamSupport;
 
 @Component
 public class CastMemberMySQLGateway implements CastMemberGateway {
@@ -74,17 +76,22 @@ public class CastMemberMySQLGateway implements CastMemberGateway {
         );
     }
 
-    private Specification<CastMemberJpaEntity> assembleSpecification(final String terms){
-        return SpecificationUtils.like("name", terms);
-    }
-
     @Override
-    public List<CastMemberID> existsByIds(final Iterable<CastMemberID> ids) {
-        throw new UnsupportedOperationException();
+    public List<CastMemberID> existsByIds(final Iterable<CastMemberID> castMemberIDS) {
+        final var ids = StreamSupport.stream(castMemberIDS.spliterator(), false)
+                .map(CastMemberID::getValue)
+                .toList();
+        return this.castMemberRepository.existsByIds(ids).stream()
+                .map(CastMemberID::from)
+                .toList();
     }
 
     private CastMember save(CastMember aCastMember) {
         return this.castMemberRepository.save(CastMemberJpaEntity.from(aCastMember))
                 .toAggregate();
+    }
+
+    private Specification<CastMemberJpaEntity> assembleSpecification(final String terms){
+        return SpecificationUtils.like("name", terms);
     }
 }
