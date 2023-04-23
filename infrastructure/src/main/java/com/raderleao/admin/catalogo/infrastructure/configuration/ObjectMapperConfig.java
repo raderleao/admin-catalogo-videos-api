@@ -1,4 +1,4 @@
-package com.raderleao.admin.catalogo.infrastructure.configuration.usecases;
+package com.raderleao.admin.catalogo.infrastructure.configuration;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.raderleao.admin.catalogo.infrastructure.configuration.json.Json;

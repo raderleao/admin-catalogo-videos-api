@@ -1,6 +1,6 @@
 package com.raderleao.admin.catalogo;
 
-import com.raderleao.admin.catalogo.infrastructure.configuration.usecases.ObjectMapperConfig;
+import com.raderleao.admin.catalogo.infrastructure.configuration.ObjectMapperConfig;
 import org.springframework.boot.test.autoconfigure.json.JsonTest;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.FilterType;
