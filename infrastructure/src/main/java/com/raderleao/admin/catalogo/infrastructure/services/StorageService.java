@@ -1,6 +1,6 @@
 package com.raderleao.admin.catalogo.infrastructure.services;
 
-import com.raderleao.admin.catalogo.domain.resource.Resource;
+import com.raderleao.admin.catalogo.domain.video.Resource;
 
 import java.util.List;
 import java.util.Optional;

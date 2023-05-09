@@ -1,6 +1,6 @@
 package com.raderleao.admin.catalogo.application.video.create;
 
-import com.raderleao.admin.catalogo.domain.resource.Resource;
+import com.raderleao.admin.catalogo.domain.video.Resource;
 
 import java.util.Optional;
 import java.util.Set;
