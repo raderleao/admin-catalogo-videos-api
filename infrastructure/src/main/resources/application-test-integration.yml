@@ -1,4 +1,8 @@
+
 spring:
+  autoconfigure:
+    exclude:
+      - org.springframework.boot.autoconfigure.amqp.RabbitAutoConfiguration
   jpa:
     show-sql: true
   datasource:
