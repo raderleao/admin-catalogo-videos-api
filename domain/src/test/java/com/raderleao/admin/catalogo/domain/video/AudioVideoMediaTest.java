@@ -1,11 +1,12 @@
 package com.raderleao.admin.catalogo.domain.video;
 
 
+import com.raderleao.admin.catalogo.domain.UnitTest;
 import com.raderleao.admin.catalogo.domain.utils.IdUtils;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-class AudioVideoMediaTest {
+class AudioVideoMediaTest extends UnitTest {
     @Test
     public void givenValidParams_whenCallsNewAudioVideo_ShouldReturnInstance() {
         // given
