@@ -3,7 +3,7 @@ package com.raderleao.admin.catalogo.infrastructure.services.impl;
 import com.amazonaws.services.s3.AmazonS3;
 import com.amazonaws.services.s3.model.*;
 import com.amazonaws.util.IOUtils;
-import com.raderleao.admin.catalogo.domain.resource.Resource;
+import com.raderleao.admin.catalogo.domain.video.Resource;
 import com.raderleao.admin.catalogo.infrastructure.services.StorageService;
 
 import java.io.ByteArrayInputStream;

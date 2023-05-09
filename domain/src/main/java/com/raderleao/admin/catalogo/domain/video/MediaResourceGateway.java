@@ -1,7 +1,5 @@
 package com.raderleao.admin.catalogo.domain.video;
 
-import com.raderleao.admin.catalogo.domain.resource.Resource;
-
 import java.util.Optional;
 
 public interface MediaResourceGateway {
