@@ -1,6 +1,7 @@
 package com.raderleao.admin.catalogo;
 
 import com.raderleao.admin.catalogo.infrastructure.configuration.ObjectMapperConfig;
+import org.junit.jupiter.api.Tag;
 import org.springframework.boot.test.autoconfigure.json.JsonTest;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.FilterType;
@@ -21,5 +22,6 @@ import java.lang.annotation.Target;
 }
 
 )
+@Tag("integrationTest")
 public @interface JacksonTest {
 }

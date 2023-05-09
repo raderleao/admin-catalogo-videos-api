@@ -1,9 +1,10 @@
 package com.raderleao.admin.catalogo.domain.video;
 
+import com.raderleao.admin.catalogo.domain.UnitTest;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-class ImageMediaTest {
+class ImageMediaTest extends UnitTest {
     @Test
     public void givenValidParams_whenCallsNewImage_ShouldReturnInstance() {
         // given
