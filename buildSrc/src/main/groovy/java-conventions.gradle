@@ -25,7 +25,6 @@ jacoco{
 
 tasks.named("test") {
     useJUnitPlatform()
-    jvmArgs '-Xshare:off'
 }
 
 task unitTests(type: Test, group: "verification") {
