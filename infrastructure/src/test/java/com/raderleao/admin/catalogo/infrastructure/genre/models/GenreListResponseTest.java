@@ -1,13 +1,11 @@
 package com.raderleao.admin.catalogo.infrastructure.genre.models;
 
 import com.raderleao.admin.catalogo.JacksonTest;
-import com.raderleao.admin.catalogo.infrastructure.category.models.CategoryListResponse;
+import com.raderleao.admin.catalogo.domain.utils.InstantUtils;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.json.JacksonTester;
-
-import java.time.Instant;
 
 @JacksonTest
 class GenreListResponseTest {
@@ -20,8 +18,8 @@ class GenreListResponseTest {
         final var expectedId = "123";
         final var expectedName = "Ação";
         final var expectedIsActive = false;
-        final var expectedCreatedAt = Instant.now();
-        final var expectedDeletedAt = Instant.now();
+        final var expectedCreatedAt = InstantUtils.now();
+        final var expectedDeletedAt = InstantUtils.now();
 
         final var response = new GenreListResponse(
                 expectedId,

@@ -2,6 +2,7 @@ package com.raderleao.admin.catalogo.infrastructure.castmember.models;
 
 import com.raderleao.admin.catalogo.domain.Fixture;
 import com.raderleao.admin.catalogo.JacksonTest;
+import com.raderleao.admin.catalogo.domain.utils.InstantUtils;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,7 +21,7 @@ class CastMemberListResponseTest {
         final var expectedId = "123";
         final var expectedName = Fixture.name();
         final var expectedType = Fixture.CastMembers.type().name();
-        final var expectedCreatedAt = Instant.now().toString();
+        final var expectedCreatedAt = InstantUtils.now().toString();
 
         final var response = new CastMemberListResponse(
                 expectedId,
