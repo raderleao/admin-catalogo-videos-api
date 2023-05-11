@@ -5,7 +5,7 @@ on:
     branches:
       - main
       - master
-      - develop
+      - development
       - 'hotfix/**'
       - 'release/**'
       - 'modulos/**'
