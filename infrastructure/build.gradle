@@ -92,3 +92,7 @@ testCodeCoverageReport {
 tasks.named("jacocoTestReport") {
     dependsOn tasks.named("testCodeCoverageReport", JacocoReport)
 }
+
+tasks.withType(JavaCompile) {
+    options.compilerArgs << "-Xlint:unchecked"
+}
