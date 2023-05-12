@@ -1,5 +1,6 @@
 package com.raderleao.admin.catalogo.e2e.category;
 
+import com.raderleao.admin.catalogo.ApiTest;
 import com.raderleao.admin.catalogo.E2ETest;
 import com.raderleao.admin.catalogo.domain.category.CategoryID;
 import com.raderleao.admin.catalogo.e2e.MockDsl;
@@ -175,6 +176,7 @@ public class CategoryE2ETest implements MockDsl {
         Assertions.assertEquals(0, categoryRepository.count());
 
         final var aRequest = get("/categories/123")
+                .with(ApiTest.CATEGORIES_JWT)
                 .accept(MediaType.APPLICATION_JSON)
                 .contentType(MediaType.APPLICATION_JSON);
 
