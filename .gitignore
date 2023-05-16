@@ -6,7 +6,9 @@ build/
 !**/src/test/**/build/
 .env
 .env.local
+sandax/.docker
 .DS_Store
+
 application/build/
 domain/build/
 infrastructure/build/

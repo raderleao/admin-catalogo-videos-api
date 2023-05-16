@@ -34,14 +34,14 @@ public class CategoryE2ETest implements MockDsl {
     private CategoryRepository categoryRepository;
 
     @Container
-    private static final MySQLContainer MY_SQL_CONTAINER = new MySQLContainer("mysql:latest")
+    private static final MySQLContainer MYSQL_CONTAINER = new MySQLContainer("mysql:latest")
             .withPassword("123456")
             .withUsername("root")
             .withDatabaseName("adm_videos");
 
     @DynamicPropertySource
     public static void setDatasourceProperties(final DynamicPropertyRegistry registry) {
-        registry.add("mysql.port", () -> MY_SQL_CONTAINER.getMappedPort(3306));
+        registry.add("mysql.port", () -> MYSQL_CONTAINER.getMappedPort(3306));
     }
 
     @Override
@@ -51,7 +51,7 @@ public class CategoryE2ETest implements MockDsl {
 
     @Test
     public void asACatalogAdminIShouldBeAbleToCreateANewCategoryWithValidValues() throws Exception {
-        Assertions.assertTrue(MY_SQL_CONTAINER.isRunning());
+        Assertions.assertTrue(MYSQL_CONTAINER.isRunning());
         Assertions.assertEquals(0, categoryRepository.count());
 
         final var expectedName = "Filme";
@@ -72,7 +72,7 @@ public class CategoryE2ETest implements MockDsl {
 
     @Test
     public void asACatalogAdminIShouldBeAbleToNavigateToAllCategories() throws Exception {
-        Assertions.assertTrue(MY_SQL_CONTAINER.isRunning());
+        Assertions.assertTrue(MYSQL_CONTAINER.isRunning());
         Assertions.assertEquals(0, categoryRepository.count());
 
         givenACategory("Filmes", null, true);
@@ -113,7 +113,7 @@ public class CategoryE2ETest implements MockDsl {
 
     @Test
     public void asACatalogAdminIShouldBeAbleToSearchBetweenToAllCategories() throws Exception {
-        Assertions.assertTrue(MY_SQL_CONTAINER.isRunning());
+        Assertions.assertTrue(MYSQL_CONTAINER.isRunning());
         Assertions.assertEquals(0, categoryRepository.count());
 
         givenACategory("Filmes", null, true);
@@ -131,7 +131,7 @@ public class CategoryE2ETest implements MockDsl {
 
     @Test
     public void asACatalogAdminIShouldBeAbleToSortAllCategoriesByDescriptionDesc() throws Exception {
-        Assertions.assertTrue(MY_SQL_CONTAINER.isRunning());
+        Assertions.assertTrue(MYSQL_CONTAINER.isRunning());
         Assertions.assertEquals(0, categoryRepository.count());
 
         givenACategory("Filmes", "C", true);
@@ -151,7 +151,7 @@ public class CategoryE2ETest implements MockDsl {
 
     @Test
     public void asACatalogAdminIShouldBeAbleToGetACategoryByItsIdentifier() throws Exception {
-        Assertions.assertTrue(MY_SQL_CONTAINER.isRunning());
+        Assertions.assertTrue(MYSQL_CONTAINER.isRunning());
         Assertions.assertEquals(0, categoryRepository.count());
 
         final var expectedName = "Filme";
@@ -172,23 +172,22 @@ public class CategoryE2ETest implements MockDsl {
 
     @Test
     public void asACatalogAdminIShouldBeAbleToSeeATreatedErrorByGettingANotFoundCategory() throws Exception {
-        Assertions.assertTrue(MY_SQL_CONTAINER.isRunning());
+        Assertions.assertTrue(MYSQL_CONTAINER.isRunning());
         Assertions.assertEquals(0, categoryRepository.count());
 
         final var aRequest = get("/categories/123")
-                .with(ApiTest.CATEGORIES_JWT)
+                .with(ApiTest.ADMIN_JWT)
                 .accept(MediaType.APPLICATION_JSON)
                 .contentType(MediaType.APPLICATION_JSON);
 
         this.mvc.perform(aRequest)
                 .andExpect(status().isNotFound())
-                .andExpect(jsonPath("$.message", equalTo(
-                        "Category with ID 123 was not found")));
+                .andExpect(jsonPath("$.message", equalTo("Category with ID 123 was not found")));
     }
 
     @Test
     public void asACatalogAdminIShouldBeAbleToUpdateACategoryByItsIdentifier() throws Exception {
-        Assertions.assertTrue(MY_SQL_CONTAINER.isRunning());
+        Assertions.assertTrue(MYSQL_CONTAINER.isRunning());
         Assertions.assertEquals(0, categoryRepository.count());
 
         final var actualId = givenACategory("Movies", null, true);
@@ -213,7 +212,7 @@ public class CategoryE2ETest implements MockDsl {
 
     @Test
     public void asACatalogAdminIShouldBeAbleToInactivateACategoryByItsIdentifier() throws Exception {
-        Assertions.assertTrue(MY_SQL_CONTAINER.isRunning());
+        Assertions.assertTrue(MYSQL_CONTAINER.isRunning());
         Assertions.assertEquals(0, categoryRepository.count());
 
         final var expectedName = "Filme";
@@ -239,7 +238,7 @@ public class CategoryE2ETest implements MockDsl {
 
     @Test
     public void asACatalogAdminIShouldBeAbleToActivateACategoryByItsIdentifier() throws Exception {
-        Assertions.assertTrue(MY_SQL_CONTAINER.isRunning());
+        Assertions.assertTrue(MYSQL_CONTAINER.isRunning());
         Assertions.assertEquals(0, categoryRepository.count());
 
         final var expectedName = "Filme";
@@ -265,7 +264,7 @@ public class CategoryE2ETest implements MockDsl {
 
     @Test
     public void asACatalogAdminIShouldBeAbleToDeleteACategoryByItsIdentifier() throws Exception {
-        Assertions.assertTrue(MY_SQL_CONTAINER.isRunning());
+        Assertions.assertTrue(MYSQL_CONTAINER.isRunning());
         Assertions.assertEquals(0, categoryRepository.count());
 
         final var actualId = givenACategory("Filmes", null, true);
@@ -280,7 +279,7 @@ public class CategoryE2ETest implements MockDsl {
 
     @Test
     public void asACatalogAdminIShouldNotSeeAnErrorByDeletingANotExistentCategory() throws Exception {
-        Assertions.assertTrue(MY_SQL_CONTAINER.isRunning());
+        Assertions.assertTrue(MYSQL_CONTAINER.isRunning());
         Assertions.assertEquals(0, categoryRepository.count());
 
         deleteACategory(CategoryID.from("12313"))

@@ -14,7 +14,6 @@ mysql:
   schema: adm_videos
   url: ${DATABASE_MYSQL_URL:localhost:3306}
 
-
 spring:
   jpa:
     show-sql: false
