@@ -13,7 +13,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
 
 @Configuration
-@Profile({"development", "production"})
+@Profile({"!development", "!test-integration", "!test-e2e"})
 public class S3CloudConfig {
 
     @Bean
